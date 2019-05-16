@@ -6,7 +6,7 @@
                 <v-flex xs12 md7 lg5 xl4 >
                     <h1 class="mb-4">Want to step up your E-Sport Game?</h1>
                     <p class="mb-4">eSport Esbjerg is a public education association that gathers gaming interested people - young and old.</p>
-                    <v-btn class="ma-0" to="/pricing">Start Now</v-btn>
+                    <v-btn id="PrimaryButton" class="ma-0" to="/pricing">Start Now</v-btn>
                 </v-flex>
             </v-layout>
         </v-container>
@@ -69,28 +69,23 @@
                          <li>
                             <p class="mb-4">eSport Esbjerg is a public education association that gathers gaming interested people - young and old.</p>
                         </li>
-
                     </ul>
                 </v-flex>
             </v-layout>
         </v-container>
     </div>
-        <v-container fluid id="joinNow">
-           <v-layout align-center justify-center column fill-height >
-                <v-flex xs12 md6 lg5 xl4 >
-                    <h1 class="mb-4 mt-4">Join us now!</h1>
-                </v-flex>
-                <v-flex xs12 md7 lg5 xl4 >
-                    <v-btn class="ma-0 mb-4" to="/pricing">Start Now</v-btn>
-                </v-flex>
-            </v-layout>
-        </v-container>
+    <webapp-joinnow />
 </div>
 
 </template>
 
 <script>
+import joinnow from '../components/joinNow.vue'
+
 export default {
+    components: {
+  'webapp-joinnow': joinnow,
+  },
 }
 </script>
 
@@ -126,13 +121,7 @@ export default {
     direction: rtl;
 }
 
-h1{
-  font-size: 50.9px;
-  font-weight: 600;
-  line-height: 1.06;
-  letter-spacing: 2px;
-  color: #ffffff;
-}
+
 p{font-size: 18px;
   font-weight: normal;
   font-style: normal;
@@ -147,9 +136,7 @@ p{font-size: 18px;
         height: 60vh;
  }
 
- #joinNow {
-     background-color: #11537c;
- }
+
 
 ul{
   color: var(--bluish);
