@@ -7,7 +7,7 @@
 
       <v-toolbar-title class="headline text-uppercase">
           <router-link to="/">
-          Home
+          Homeeeeyyy
     </router-link>
         |
     <router-link to="/about">
