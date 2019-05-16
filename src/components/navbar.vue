@@ -2,7 +2,7 @@
    
  <v-toolbar app>
      <router-link to="/">
-        <img src="../assets/Logo.png" alt="Logo">
+        <img src="../assets/logo.png" alt="Logo" height="70px">
     </router-link>
 
       <v-toolbar-title class="headline text-uppercase">
