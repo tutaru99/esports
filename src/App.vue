@@ -51,4 +51,8 @@ export default {
 p{
   font-family: 'Open Sans', sans-serif;
 }
+
+.v-btn {
+  color: inear-gradient(106deg, var(--bluish), var(--light-navy));
+}
 </style>
