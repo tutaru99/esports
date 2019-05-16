@@ -36,11 +36,12 @@ export default {
   --light-periwinkle: #cae1ff;
   --light-navy: #11537c;
   --bluish: #2c93c6;
+  --gradient: linear-gradient(106deg, var(--bluish), var(--light-navy));
 }
 #app {
  background-image: url("./assets/Background_Pattern.svg");
  background-image: repeat;
- background-color: #131723;
+ background-color: var(--dark);
 }
 
 *{
