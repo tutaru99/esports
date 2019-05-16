@@ -1,5 +1,5 @@
 <template>
-  <v-app id="App">
+  <v-app id="app">
    <webapp-navbar />
     <v-content>
       <router-view>
@@ -30,6 +30,7 @@ export default {
 <style>
 #app {
  background-image: url("./assets/Background_Pattern.svg");
+ background-image: repeat;
  background-color: #131723;
 
 }
