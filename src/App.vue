@@ -1,5 +1,7 @@
 <template>
   <v-app id="app">
+
+    
    <webapp-navbar />
     <v-content>
       <router-view>
@@ -28,20 +30,24 @@ export default {
 </script>
 
 <style>
+:root {
+  --dark: #131723;
+  --pale-sky-blue: #d7dfe2;
+  --light-periwinkle: #cae1ff;
+  --light-navy: #11537c;
+  --bluish: #2c93c6;
+}
 #app {
  background-image: url("./assets/Background_Pattern.svg");
  background-image: repeat;
  background-color: #131723;
-
 }
 
 *{
   font-family: 'Barlow Semi Condensed', sans-serif;
-  text-transform: uppercase;
-
+  
 }
 p{
   font-family: 'Open Sans', sans-serif;
 }
-
 </style>

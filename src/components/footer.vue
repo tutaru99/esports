@@ -1,16 +1,17 @@
  <template>
-<h1>This is Footer</h1>
-
+  <h1> I am footer <h1>
  </template>
 
 
-    <script>
-    export default {
-        
-    }
-    </script>
+<script>
+export default {
     
-    <style scoped>
-    
-    </style>
+}
+
+</script>
+ 
+
+<style>
+
+</style>
     
