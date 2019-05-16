@@ -1,7 +1,6 @@
 <template>
- <h1>This is Home page</h1>
+     <h1>This is Events page</h1>
 </template>
-
 
 <script>
 export default {
@@ -9,9 +8,8 @@ export default {
 }
 </script>
 
-
-
 <style scoped>
 
 </style>
+
 
