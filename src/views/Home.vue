@@ -85,6 +85,18 @@
                 </v-flex>
             </v-layout>
         </v-container>
+
+        <v-container fluid>
+            <v-layout align-center justify-center>
+            <v-flex xs12 md6 lg5 xl4>
+            <h1>News</h1>
+            <v-image> img </v-image>
+            <h2>Title of the news</h2>
+            <p>short description</p>
+            <router-link to="/">Read More</router-link>
+            </v-flex>
+        </v-layout>
+        </v-container>
 </div>
 
 </template>
