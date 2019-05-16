@@ -15,6 +15,7 @@
 
 import navbar from './components/navbar.vue'
 import footer from './components/footer.vue'
+
 export default {
   name: 'App',
   components: {
@@ -52,7 +53,17 @@ p{
   font-family: 'Open Sans', sans-serif;
 }
 
-.v-btn {
-  color: inear-gradient(106deg, var(--bluish), var(--light-navy));
+#PrimaryButton {
+  background-image: linear-gradient(106deg, var(--bluish), var(--light-navy));
+  color: white;
+  padding: 24px 24px;
+  font-size: 18px;  
+}
+
+h1{
+  font-size: 50.9px;
+  line-height: 1.06;
+  letter-spacing: 2px;
+  color: #ffffff;
 }
 </style>
