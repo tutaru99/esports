@@ -1,6 +1,10 @@
  <template>
    
  <v-toolbar app>
+     <router-link to="/">
+        <img src="../assets/Logo.png" alt="Logo">
+    </router-link>
+
       <v-toolbar-title class="headline text-uppercase">
           <router-link to="/">
           Home
