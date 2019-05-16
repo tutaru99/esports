@@ -78,10 +78,10 @@
         <v-container fluid id="joinNow">
            <v-layout align-center justify-center column fill-height >
                 <v-flex xs12 md6 lg5 xl4 >
-                    <h1 class="mb-4">Join us now!</h1>
+                    <h1 class="mb-4 mt-4">Join us now!</h1>
                 </v-flex>
                 <v-flex xs12 md7 lg5 xl4 >
-                    <v-btn class="ma-0" to="/pricing">Start Now</v-btn>
+                    <v-btn class="ma-0 mb-4" to="/pricing">Start Now</v-btn>
                 </v-flex>
             </v-layout>
         </v-container>
