@@ -84,20 +84,84 @@
                 </v-flex>
             </v-layout>
         </v-container>
-
+<!-- Comment 
         <v-container fluid>
-            <v-layout align-center justify-center>
+            <v-layout align-center justify-center column fill-height>
             <v-flex xs12 md6 lg5 xl4>
-            <h1>News</h1>
+            <h1>NEWS</h1>
             <v-image> img </v-image>
             <h2>Title of the news</h2>
             <p>short description</p>
-            <router-link to="/">Read More</router-link>
+            <router-link  to="/">Read More</router-link>
             </v-flex>
-        </v-layout>
+            <v-flex xs12 md7 lg5 xl4 > 
+            <v-btn id="PrimaryButton" class="ma-0" to="/news">MORE ARTICLES</v-btn>
+            </v-flex>
+        
         </v-container>
-</div>
+-->
 
+        <v-container fluid>
+            <v-layout align-center justify-center column fill-height>
+                 <v-flex xs12 md6 lg5 xl4>
+                <h1>NEWS</h1>
+                 </v-flex>
+            </v-layout>
+        </v-container>
+
+<!-- Articles -->
+<v-container>
+    <v-layout row>
+        <v-flex xs12 sm8 offset-sm2>   
+                <v-card flat color="transparent">
+                <v-img src="https://scontent.faar2-1.fna.fbcdn.net/v/t1.15752-9/60335904_2179405048843405_3713206390844555264_n.jpg?_nc_cat=101&_nc_ht=scontent.faar2-1.fna&oh=a6dc7dd1e8ee26978149919542944f82&oe=5D709D39"
+                height="200px">
+                </v-img>
+            <v-card-title primary-title class="white--text">
+                <div>
+                <div  class="headline">E BANKS THAT ACCEPT US CASINO PLAYERS</div>
+                <span >While most people enjoy casino gambling, sports betting, lottery and bingo playing for the fun and excitement it provides, others may experience gam…</span>
+                </div>
+            </v-card-title>  
+             <router-link to="/">Read More</router-link>
+                </v-card>
+                    <hr class="mb-2"> 
+                <v-spacer></v-spacer>
+        </v-flex>
+        
+    </v-layout>
+    
+
+    <v-layout row>
+        <v-flex xs12 sm8 offset-sm2>   
+                <v-card flat color="transparent">
+                <v-img src="https://scontent.faar2-1.fna.fbcdn.net/v/t1.15752-9/60509183_878543045820266_2942794317137182720_n.jpg?_nc_cat=104&_nc_ht=scontent.faar2-1.fna&oh=18ae3fd94795c6ae7df325963e436fbc&oe=5D9DCEBD"
+                height="200px">
+                </v-img>
+            <v-card-title primary-title class="white--text">
+                <div>
+                <div  class="headline">E BANKS THAT ACCEPT US CASINO PLAYERS</div>
+                <span >While most people enjoy casino gambling, sports betting, lottery and bingo playing for the fun and excitement it provides, others may experience gam…</span>
+                </div>
+            </v-card-title>
+             <router-link to="/">Read More</router-link>
+                </v-card>
+                <hr class="mb-2"> 
+        </v-flex>
+        
+    </v-layout>
+</v-container>
+
+<v-container fluid>
+    <v-layout align-center justify-center column fill-height> 
+        <v-flex xs12 md7 lg5 xl4 > 
+            <v-btn id="PrimaryButton" class="ma-0" to="/news">MORE ARTICLES</v-btn>
+        </v-flex>
+    </v-layout>
+</v-container>
+    
+</div>
+  
 </template>
 
 <script>
@@ -163,4 +227,5 @@ ul{
   color: var(--bluish);
   
 }
+
 </style>
