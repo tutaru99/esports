@@ -160,6 +160,30 @@
     </v-layout>
 </v-container>
     
+ <div fluid id="discord">
+        <v-container  id="imgContainer">
+            <v-layout align-center justify-end row fill-height >
+                <v-flex xs12 md7 lg6 xl4 >
+                    <h1 class="mb-4">JOIN OUR SERVERS</h1>
+                    <ul>
+                        <li>
+                            <p class="mb-4">eSport Esbjerg is a public education association that gathers gaming interested people - young and old.</p>
+                        </li>
+                         <li>
+                            <p class="mb-4">eSport Esbjerg is a public education association that gathers gaming interested people - young and old.</p>
+                        </li>
+                         <li>
+                            <p class="mb-4">eSport Esbjerg is a public education association that gathers gaming interested people - young and old.</p>
+                        </li>
+                         <li>
+                            <p class="mb-4">eSport Esbjerg is a public education association that gathers gaming interested people - young and old.</p>
+                        </li>
+                    </ul>
+                </v-flex>
+            </v-layout>
+        </v-container>
+    </div>
+
 </div>
   
 </template>
@@ -205,7 +229,15 @@ export default {
     text-align: right;
     direction: rtl;
 }
+#discord {
+    background-image: url("../assets/discord.png");
+    background-repeat: no-repeat;
+    height: 600px;
+    background-size: cover;
+    text-align: right;
+    direction: rtl;
 
+}
 
 p{font-size: 18px;
   font-weight: normal;
