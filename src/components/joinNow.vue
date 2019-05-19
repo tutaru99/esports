@@ -20,6 +20,15 @@
 </script>
 
 <style lang="scss" scoped>
+
+:root {
+  --dark: #131723;
+  --pale-sky-blue: #d7dfe2;
+  --light-periwinkle: #cae1ff;
+  --light-navy: #11537c;
+  --bluish: #2c93c6;
+  --gradient: linear-gradient(106deg, var(--bluish), var(--light-navy));
+}
  #joinNow {
     background-image: linear-gradient(106deg, var(--bluish), var(--light-navy));
  }

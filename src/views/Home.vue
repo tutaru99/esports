@@ -74,6 +74,10 @@
             </v-layout>
         </v-container>
     </div>
+
+    <webapp-joinnow />
+
+    <!-- Old Join now?
         <v-container fluid id="joinNow">
            <v-layout align-center justify-center column fill-height >
                 <v-flex xs12 md6 lg5 xl4 >
@@ -84,6 +88,9 @@
                 </v-flex>
             </v-layout>
         </v-container>
+        -->
+
+
 <!-- Comment 
         <v-container fluid>
             <v-layout align-center justify-center column fill-height>
@@ -101,15 +108,17 @@
         </v-container>
 -->
 
-        <v-container fluid>
+
+<!-- Articles -->
+
+        <v-container>
             <v-layout align-center justify-center column fill-height>
-                 <v-flex xs12 md6 lg5 xl4>
-                <h1>NEWS</h1>
+                 <v-flex xs12>
+                <h1 class="mt-5">NEWS</h1>
                  </v-flex>
             </v-layout>
         </v-container>
 
-<!-- Articles -->
 <v-container>
     <v-layout row>
         <v-flex xs12 sm8 offset-sm2>   
@@ -119,14 +128,14 @@
                 </v-img>
             <v-card-title primary-title class="white--text">
                 <div>
-                <div  class="headline">E BANKS THAT ACCEPT US CASINO PLAYERS</div>
-                <span >While most people enjoy casino gambling, sports betting, lottery and bingo playing for the fun and excitement it provides, others may experience gam…</span>
+                    <h2>E BANKS THAT ACCEPT US CASINO PLAYERS</h2>
+                    <p class="mt-2" >While most people enjoy casino gambling, sports betting, lottery and bingo playing for the fun and excitement it provides, others may experience gam…</p>
                 </div>
-            </v-card-title>  
-             <router-link to="/">Read More</router-link>
-                </v-card>
-                    <hr class="mb-2"> 
                 <v-spacer></v-spacer>
+                <router-link id="ghostbutton" to="/">Read More</router-link>
+            </v-card-title>  
+                </v-card>
+                    <hr class="mb-4"> 
         </v-flex>
         
     </v-layout>
@@ -144,7 +153,7 @@
                 <span >While most people enjoy casino gambling, sports betting, lottery and bingo playing for the fun and excitement it provides, others may experience gam…</span>
                 </div>
             </v-card-title>
-             <router-link to="/">Read More</router-link>
+             <router-link  to="/">Read More</router-link>
                 </v-card>
                 <hr class="mb-2"> 
         </v-flex>
@@ -152,6 +161,7 @@
     </v-layout>
 </v-container>
 
+<!-- Discord -->
 <v-container fluid>
     <v-layout align-center justify-center column fill-height> 
         <v-flex xs12 md7 lg5 xl4 > 
@@ -199,6 +209,11 @@ export default {
 </script>
 
 <style scoped>
+
+#ghostbutton {
+    color: white;
+}
+
 
 #sponsor {
     margin: 32px 0px 32px 0px;

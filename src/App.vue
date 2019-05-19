@@ -65,5 +65,14 @@ h1{
   line-height: 1.06;
   letter-spacing: 2px;
   color: #ffffff;
+  text-transform: uppercase;
+}
+
+h2{
+  font-size: 36px;
+  line-height: normal;
+  letter-spacing: 2px;
+  color: #ffffff;
+  text-transform: uppercase;
 }
 </style>
