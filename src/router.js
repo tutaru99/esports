@@ -6,6 +6,10 @@ import Games from './views/Games.vue';
 import News from './views/News.vue';
 import Pricing from './views/Pricing.vue';
 import Home from './views/Home.vue';
+import Fortnite from './views/FORTNITE.vue';
+import Csgo from './views/CSGO.vue';
+
+
 Vue.use(Router);
 
 export default new Router({
@@ -31,6 +35,14 @@ component: News
 { path: '/pricing',
 name: 'pricing',
 component: Pricing
+},
+{ path: '/Fortninte',
+name: 'Fortnite',
+component: Fortnite
+},
+{ path: '/Csgo',
+name: 'Csgo',
+component: Csgo
 },
     {
       path: '/about',
