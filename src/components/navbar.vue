@@ -50,6 +50,7 @@ export default {};
     <style scoped>
 * {
   font-family: "Open Sans", sans-serif;
+
 }
 a {
   font-size: 18px;
@@ -91,6 +92,62 @@ h3 {
   z-index: 1;
 }
 
+/* Navbar container */
+.navbar {
+  overflow: hidden;
+}
+
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* The dropdown container */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 16px; 
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+/* Add a red background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: #2c93c6;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #2F333D;
+  width: 100%;
+  left: 0;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Mega Menu header, if needed */
+.dropdown-content .header {
+  background: red;
+  padding: 16px;
+  color: white;
+}
+
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
   display: block;
@@ -101,6 +158,6 @@ h3 {
   content: "";
   display: table;
   clear: both;
-}
-</style>
+} 
+    </style>
     
