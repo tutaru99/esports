@@ -15,7 +15,7 @@
               <h3>GAMES WE OFFER</h3>
               <v-layout align-center justify-center class="row">
                 <v-flex>
-                  <router-link to="/Fortnine" class="ma-3">
+                  <router-link to="/Fortnite" class="ma-3">
                     <v-img height="151px" width="268px" :src="require('./../assets/fortnite.png')"></v-img>
                   </router-link>
                 </v-flex>
@@ -47,7 +47,7 @@
     </v-toolbar>
     
     <v-card-title height="100">
-    <<v-container class="hidden-lg-and-up" fluid>
+    <v-container class="hidden-lg-and-up" fluid>
       <v-layout justify-end>
         <v-btn id="PrimaryButton" to="/pricing">Get Started</v-btn>
         <v-btn @click.stop="drawer = !drawer">Menu</v-btn>

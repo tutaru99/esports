@@ -36,7 +36,7 @@ component: News
 name: 'pricing',
 component: Pricing
 },
-{ path: '/Fortninte',
+{ path: '/Fortnite',
 name: 'Fortnite',
 component: Fortnite
 },
