@@ -75,4 +75,15 @@ h2{
   color: #ffffff;
   text-transform: uppercase;
 }
+
+h3{
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  font-size: 25.5px;
+  line-height: normal;
+  letter-spacing: 2px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+
 </style>

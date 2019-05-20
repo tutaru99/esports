@@ -1,7 +1,6 @@
 <template>
-<<<<<<< HEAD
+
    <h1>dis is games page</h1>
-=======
   <div class="navbar">
   <a href="#home">Home</a>
   <a href="#news">News</a>
@@ -36,7 +35,8 @@
     </div>
   </div> 
 </div> 
->>>>>>> a2eedc056181bf2e5806ed76c4f418114642a0c8
+
+
 </template>
 
 <script>
