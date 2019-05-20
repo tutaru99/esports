@@ -72,6 +72,8 @@
         </v-container>
     </div>
 
+
+    <!-- JOIN NOW -->
     <webapp-joinnow />
 
     <!-- Old Join now?

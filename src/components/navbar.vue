@@ -3,55 +3,48 @@
     <router-link to="/" class="ma-3">
       <img src="../assets/logo.png" alt="Logo" height="137px" class="mt-5">
     </router-link>
-    
+
     <v-toolbar-title>
-      <router-link to="/" class="ma-3">Home</router-link>
       <router-link to="/Pricing" class="ma-3">Pricing</router-link>
       <div class="dropdown">
-          <router-link to="/" class="ma-3">Games</router-link>
-          <v-container fluid class="dropdown-content">
-            <v-container>
+        <router-link  to="/" class="ma-3">Games</router-link>
+        <v-container fluid class="dropdown-content">
+          <v-container>
             <h3>GAMES WE OFFER</h3>
             <v-layout align-center justify-center class="row">
-                
-                <v-flex>
+              <v-flex>
                 <router-link to="/Fortnine" class="ma-3">
                   <v-img height="151px" width="268px" :src="require('./../assets/fortnite.png')"></v-img>
                 </router-link>
-                </v-flex>
-                  <v-flex>
+              </v-flex>
+              <v-flex>
                 <router-link to="/Csgo" class="ma-3">
                   <v-img height="151px" width="268px" :src="require('./../assets/cs.png')"></v-img>
                 </router-link>
-                </v-flex>
-                  <v-flex>
+              </v-flex>
+              <v-flex>
                 <router-link to="/" class="ma-3">
                   <v-img height="151px" width="268px" :src="require('./../assets/ow.png')"></v-img>
                 </router-link>
-                </v-flex>
-                  <v-flex>
+              </v-flex>
+              <v-flex>
                 <router-link to="/" class="ma-3">
                   <v-img height="151px" width="268px" :src="require('./../assets/fifa.png')"></v-img>
                 </router-link>
-                </v-flex>
+              </v-flex>
             </v-layout>
-            </v-container>
           </v-container>
-        </div>
-        <router-link to="/News" class="ma-3">News</router-link>
+        </v-container>
+      </div>
+      <router-link to="/News" class="ma-3">News</router-link>
       <router-link to="/about" class="ma-3">About</router-link>
-      <router-link to="/Events" class="ma-3">Events</router-link> 
+      <router-link to="/Events" class="ma-3">Events</router-link>
     </v-toolbar-title>
-
   </v-toolbar>
 </template>
 
     <script>
-export default {
-  data: () => ({
-    items: ["All", "Family", "Friends", "Coworkers"]
-  })
-};
+export default {};
 </script>
     
     <style scoped>
@@ -72,8 +65,8 @@ a {
   background-color: transparent;
 }
 
-h3{
-  font-family: 'Barlow Semi Condensed', sans-serif;
+h3 {
+  font-family: "Barlow Semi Condensed", sans-serif;
   font-size: 25.5px;
   line-height: normal;
   letter-spacing: 2px;
@@ -85,9 +78,7 @@ h3{
 .dropdown {
   float: left;
   overflow: hidden;
-
 }
-
 
 /* Dropdown content (hidden by default) */
 .dropdown-content {
@@ -104,7 +95,6 @@ h3{
 .dropdown:hover .dropdown-content {
   display: block;
 }
-
 
 /* Clear floats after the columns */
 .row:after {
