@@ -1,11 +1,12 @@
  <template>
   <div>
-    <v-toolbar class="hidden-sm-and-up" app flat height="100">
+    <v-toolbar class="hidden-md-and-down" app flat height="100">
       <router-link to="/" class="ma-3">
         <img src="../assets/logo.png" alt="Logo" height="137px" class="mt-5">
       </router-link>
 
       <v-toolbar-title>
+        
         <router-link to="/Pricing" class="ma-3">Pricing</router-link>
         <div class="dropdown">
           <router-link to="/" class="ma-3">Games</router-link>
@@ -41,18 +42,20 @@
         <router-link to="/about" class="ma-3">About</router-link>
         <router-link to="/Events" class="ma-3">Events</router-link>
       </v-toolbar-title>
+      <v-spacer></v-spacer>
       <v-btn id="PrimaryButton" to="/pricing">Get Started</v-btn>
     </v-toolbar>
-
-    <v-container fluid>
+    
+    <v-card-title height="100">
+    <<v-container class="hidden-lg-and-up" fluid>
       <v-layout justify-end>
-        <v-btn id="PrimaryButton" to="/pricing" @click.stop="drawer = !drawer">Get Started</v-btn>
+        <v-btn id="PrimaryButton" to="/pricing">Get Started</v-btn>
         <v-btn @click.stop="drawer = !drawer">Menu</v-btn>
 
         <v-navigation-drawer v-model="drawer" absolute dark right temporary>
           <v-list>
             <v-list-tile>
-              <router-link to="/Events" class="ma-3">Events</router-link>
+              <router-link to="/Pricing" class="ma-3">Pricing</router-link>
             </v-list-tile>
 
             <v-list-group  value="false">
@@ -60,17 +63,25 @@
                 <v-list-tile>
                   <div id="Games_Mobile">Games</div>
                 </v-list-tile>
-                
               </template>
               <v-list-tile>
-                  <router-link to="/Events" class="ma-3">Events</router-link>
+                  <router-link to="/Fortnite" class="ma-3">Fortnite</router-link>
+              </v-list-tile>
+              <v-list-tile>
+                  <router-link to="/Csgo" class="ma-3">CSGO</router-link>
+              </v-list-tile>
+              <v-list-tile>
+                  <router-link to="/Overwatch" class="ma-3">Overwatch</router-link>
+              </v-list-tile>
+              <v-list-tile>
+                  <router-link to="/Fifa" class="ma-3">Fifa</router-link>
               </v-list-tile>
             </v-list-group>
             <v-list-tile>
-              <router-link to="/Events" class="ma-3">Events</router-link>
+              <router-link to="/News" class="ma-3">News</router-link>
             </v-list-tile>
             <v-list-tile>
-              <router-link to="/Events" class="ma-3">Events</router-link>
+              <router-link to="/About" class="ma-3">About Us</router-link>
             </v-list-tile>
             <v-list-tile>
               <router-link to="/Events" class="ma-3">Events</router-link>
@@ -79,6 +90,7 @@
         </v-navigation-drawer>
       </v-layout>
     </v-container>
+    </v-card-title>
   </div>
 </template>
 
@@ -87,18 +99,7 @@ export default {
   data() {
     return {
       drawer: null,
-      items: [
-        { title: "Home", icon: "dashboard" },
-        { title: "About", icon: "question_answer" }
-      ],
-      admins: [["Management", "people_outline"], ["Settings", "settings"]],
-      cruds: [
-        ["Create", "add"],
-        ["Read", "insert_drive_file"],
-        ["Update", "update"],
-        ["Delete", "delete"]
-      ],
-
+    
       mini: false,
       right: null
     };

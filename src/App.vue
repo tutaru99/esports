@@ -85,5 +85,7 @@ h3{
   text-transform: uppercase;
 }
 
-
+.v-content {
+  padding: 0px !important;
+}
 </style>
