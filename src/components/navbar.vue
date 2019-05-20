@@ -65,7 +65,7 @@
               <v-list-tile>
                   <router-link to="/Events" class="ma-3">Events</router-link>
               </v-list-tile>
-            <v-list-group>
+            </v-list-group>
             <v-list-tile>
               <router-link to="/Events" class="ma-3">Events</router-link>
             </v-list-tile>
