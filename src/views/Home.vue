@@ -3,7 +3,7 @@
      <div fluid id="BgPreview">
         <v-container id="imgContainer">
             <v-layout align-center justify-start row fill-height >
-                <v-flex xs12 md7 lg5 xl4 >
+                <v-flex xs12 md7 lg5 xl4>
                     <h1 class="mb-4">Want to step up your E-Sport Game?</h1>
                     <p class="mb-4">eSport Esbjerg is a public education association that gathers gaming interested people - young and old.</p>
                     <v-btn id="PrimaryButton" class="ma-0" to="/pricing">Start Now</v-btn>
