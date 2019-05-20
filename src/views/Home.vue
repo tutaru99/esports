@@ -159,7 +159,7 @@ export default {
 
 
 #sponsor {
-    margin: 32px 0px 32px 0px;
+margin: 32px 0px 32px 0px;
   height: 106px;
   opacity: 0.2;
   background-color: #ffffff;
@@ -169,21 +169,21 @@ export default {
     background-image: url("../assets/picture-1.png");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 600px;
+    height: 80vh;
 }
 
 #Info_1 {
     background-image: url("../assets/picture-2.png");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 600px;
+    height: 80vh;
 }
 
 #Info_2 {
     background-image: url("../assets/picture-3.png");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 600px;
+    height: 80vh;
     text-align: right;
     direction: rtl;
 }

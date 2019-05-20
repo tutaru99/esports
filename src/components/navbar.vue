@@ -1,56 +1,123 @@
  <template>
-  <v-toolbar app flat height="100">
-    <router-link to="/" class="ma-3">
-      <img src="../assets/logo.png" alt="Logo" height="137px" class="mt-5">
-    </router-link>
+  <div>
+    <v-toolbar class="hidden-md-and-down" app flat height="100">
+      <router-link to="/" class="ma-3">
+        <img src="../assets/logo.png" alt="Logo" height="137px" class="mt-5">
+      </router-link>
 
-    <v-toolbar-title>
-      <router-link to="/Pricing" class="ma-3">Pricing</router-link>
-      <div class="dropdown">
-        <router-link  to="/" class="ma-3">Games</router-link>
-        <v-container fluid class="dropdown-content">
-          <v-container>
-            <h3>GAMES WE OFFER</h3>
-            <v-layout align-center justify-center class="row">
-              <v-flex>
-                <router-link to="/Fortnine" class="ma-3">
-                  <v-img height="151px" width="268px" :src="require('./../assets/fortnite.png')"></v-img>
-                </router-link>
-              </v-flex>
-              <v-flex>
-                <router-link to="/Csgo" class="ma-3">
-                  <v-img height="151px" width="268px" :src="require('./../assets/cs.png')"></v-img>
-                </router-link>
-              </v-flex>
-              <v-flex>
-                <router-link to="/" class="ma-3">
-                  <v-img height="151px" width="268px" :src="require('./../assets/ow.png')"></v-img>
-                </router-link>
-              </v-flex>
-              <v-flex>
-                <router-link to="/" class="ma-3">
-                  <v-img height="151px" width="268px" :src="require('./../assets/fifa.png')"></v-img>
-                </router-link>
-              </v-flex>
-            </v-layout>
+      <v-toolbar-title>
+        
+        <router-link to="/Pricing" class="ma-3">Pricing</router-link>
+        <div class="dropdown">
+          <router-link to="/" class="ma-3">Games</router-link>
+          <v-container fluid class="dropdown-content">
+            <v-container>
+              <h3>GAMES WE OFFER</h3>
+              <v-layout align-center justify-center class="row">
+                <v-flex>
+                  <router-link to="/Fortnine" class="ma-3">
+                    <v-img height="151px" width="268px" :src="require('./../assets/fortnite.png')"></v-img>
+                  </router-link>
+                </v-flex>
+                <v-flex>
+                  <router-link to="/Csgo" class="ma-3">
+                    <v-img height="151px" width="268px" :src="require('./../assets/cs.png')"></v-img>
+                  </router-link>
+                </v-flex>
+                <v-flex>
+                  <router-link to="/" class="ma-3">
+                    <v-img height="151px" width="268px" :src="require('./../assets/ow.png')"></v-img>
+                  </router-link>
+                </v-flex>
+                <v-flex>
+                  <router-link to="/" class="ma-3">
+                    <v-img height="151px" width="268px" :src="require('./../assets/fifa.png')"></v-img>
+                  </router-link>
+                </v-flex>
+              </v-layout>
+            </v-container>
           </v-container>
-        </v-container>
-      </div>
-      <router-link to="/News" class="ma-3">News</router-link>
-      <router-link to="/about" class="ma-3">About</router-link>
-      <router-link to="/Events" class="ma-3">Events</router-link>
-    </v-toolbar-title>
-  </v-toolbar>
+        </div>
+        <router-link to="/News" class="ma-3">News</router-link>
+        <router-link to="/about" class="ma-3">About</router-link>
+        <router-link to="/Events" class="ma-3">Events</router-link>
+      </v-toolbar-title>
+      <v-spacer></v-spacer>
+      <v-btn id="PrimaryButton" to="/pricing">Get Started</v-btn>
+    </v-toolbar>
+    
+    <v-card-title height="100">
+    <<v-container class="hidden-lg-and-up" fluid>
+      <v-layout justify-end>
+        <v-btn id="PrimaryButton" to="/pricing">Get Started</v-btn>
+        <v-btn @click.stop="drawer = !drawer">Menu</v-btn>
+
+        <v-navigation-drawer v-model="drawer" absolute dark right temporary>
+          <v-list>
+            <v-list-tile>
+              <router-link to="/Pricing" class="ma-3">Pricing</router-link>
+            </v-list-tile>
+
+            <v-list-group  value="false">
+              <template v-slot:activator>
+                <v-list-tile>
+                  <div id="Games_Mobile">Games</div>
+                </v-list-tile>
+              </template>
+              <v-list-tile>
+                  <router-link to="/Fortnite" class="ma-3">Fortnite</router-link>
+              </v-list-tile>
+              <v-list-tile>
+                  <router-link to="/Csgo" class="ma-3">CSGO</router-link>
+              </v-list-tile>
+              <v-list-tile>
+                  <router-link to="/Overwatch" class="ma-3">Overwatch</router-link>
+              </v-list-tile>
+              <v-list-tile>
+                  <router-link to="/Fifa" class="ma-3">Fifa</router-link>
+              </v-list-tile>
+            </v-list-group>
+            <v-list-tile>
+              <router-link to="/News" class="ma-3">News</router-link>
+            </v-list-tile>
+            <v-list-tile>
+              <router-link to="/About" class="ma-3">About Us</router-link>
+            </v-list-tile>
+            <v-list-tile>
+              <router-link to="/Events" class="ma-3">Events</router-link>
+            </v-list-tile>
+          </v-list>
+        </v-navigation-drawer>
+      </v-layout>
+    </v-container>
+    </v-card-title>
+  </div>
 </template>
 
     <script>
-export default {};
+export default {
+  data() {
+    return {
+      drawer: null,
+    
+      mini: false,
+      right: null
+    };
+  }
+};
 </script>
     
     <style scoped>
+:root {
+  --dark: #131723;
+  --pale-sky-blue: #d7dfe2;
+  --light-periwinkle: #cae1ff;
+  --light-navy: #11537c;
+  --bluish: #2c93c6;
+  --gradient: linear-gradient(106deg, var(--bluish), var(--light-navy));
+}
 * {
   font-family: "Open Sans", sans-serif;
-
 }
 a {
   font-size: 18px;
@@ -62,8 +129,23 @@ a {
   color: var(--light-periwinkle);
   text-decoration: none;
 }
+
+#Games_Mobile{
+   font-size: 18px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: var(--light-periwinkle);
+  text-decoration: none;
+}
 .v-toolbar {
   background-color: transparent;
+}
+
+#mobileMenu {
+  z-index: 2;
 }
 
 h3 {
@@ -115,7 +197,7 @@ h3 {
 
 /* Dropdown button */
 .dropdown .dropbtn {
-  font-size: 16px; 
+  font-size: 16px;
   border: none;
   outline: none;
   color: white;
@@ -126,7 +208,8 @@ h3 {
 }
 
 /* Add a red background color to navbar links on hover */
-.navbar a:hover, .dropdown:hover .dropbtn {
+.navbar a:hover,
+.dropdown:hover .dropbtn {
   background-color: #2c93c6;
 }
 
@@ -134,10 +217,10 @@ h3 {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #2F333D;
+  background-color: #2f333d;
   width: 100%;
   left: 0;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
 
@@ -158,6 +241,13 @@ h3 {
   content: "";
   display: table;
   clear: both;
-} 
-    </style>
+}
+
+#PrimaryButton {
+  background-image: linear-gradient(106deg, var(--bluish), var(--light-navy));
+  color: white;
+  padding: 24px 24px;
+  font-size: 18px;
+}
+</style>
     
