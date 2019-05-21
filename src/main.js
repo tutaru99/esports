@@ -4,9 +4,8 @@ import App from './App.vue';
 import router from './router';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import VueInstagram from 'vue-instagram';
 
-Vue.use(VueInstagram)
+
 Vue.config.productionTip = false;
 
 new Vue({
