@@ -2,7 +2,7 @@
   <div>
     <div fluid id="bgimg">
       <v-container id="imgcontainer">
-        <v-layout align-center justify-center column fill-height>
+        <v-layout align-start justify-start column fill-height>
           <v-flex xs12>
             <h1 class="mt-5">WE OFFER FORTNITE TRAINING</h1>
           </v-flex>
@@ -26,9 +26,9 @@
       </v-container>
     </div>
 
-    <v-container grid-list-md>
-      <v-layout align-center justify-center row fill-height>
-        <v-flex class="ma-2" v-for="Info in Infos" v-bind:key="Info.id" xs12 md3 lg3 xl3>
+    <v-container mt-5 mb-5 grid-list-md>
+      <v-layout align-center justify-center row wrap fill-height>
+        <v-flex class="pa-2" v-for="Info in Infos" v-bind:key="Info.id" xs12 sm6 md6 lg3 xl3>
           <h4>{{Info.Title}}</h4>
           <p>{{Info.descriptionText}}</p>
         </v-flex>
@@ -38,7 +38,7 @@
     <v-container class="Rectangle2">
       <v-layout ma-5 align-center justify-center>
         <v-flex xs12>
-            <h1 class="mb-5">Our Training Schedule</h1>
+            <h1 id="SchedueleHeadline" class="mb-5">Our Training Schedule</h1>
           <v-sheet height="400">
             <!-- now is normally calculated by itself, but to keep the calendar in this date range to view events -->
             <v-calendar ref="calendar" :now="today" :value="today" color="#2c93c6" type="week">
@@ -159,12 +159,7 @@
   height: 60vh;
 }
 
-h1 {
-  align-content: center !important;
-  align-items: center !important;
-  justify-content: center !important;
-  justify-items: center !important;
-}
+
 
 .Rectangle {
   width: 100%;
@@ -207,7 +202,7 @@ p {
 /* Calendar */
 
 
-h1 {
+#SchedueleHeadline {
     text-align: center;
     
 }
