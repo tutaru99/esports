@@ -87,11 +87,13 @@
     <v-layout row>
         <v-flex xs12 sm8 offset-sm2>   
                 <v-card flat color="transparent">
-                <img src="wpitem.imgurl"></img>
+                <v-img src="https://scontent.faar2-1.fna.fbcdn.net/v/t1.15752-9/60335904_2179405048843405_3713206390844555264_n.jpg?_nc_cat=101&_nc_ht=scontent.faar2-1.fna&oh=a6dc7dd1e8ee26978149919542944f82&oe=5D709D39"
+                height="200px">
+                </v-img>
             <v-card-title primary-title class="white--text">
-                <div v-show="doneLoading" v-for="(wpitem, index) in wpitems" :key="index">
-                    <h2 v-html= "wpitem.title.rendered"> </h2>
-                    <p class="mt-2" v-html="wpitem.content.rendered"></p>
+                <div>
+                    <h2>E BANKS THAT ACCEPT US CASINO PLAYERS</h2>
+                    <p class="mt-2" >While most people enjoy casino gambling, sports betting, lottery and bingo playing for the fun and excitement it provides, others may experience gam…</p>
                 </div>
                 <v-spacer></v-spacer>
                 <router-link id="ghostbutton" to="/">Read More</router-link>
@@ -138,49 +140,15 @@
 </template>
 
 <script>
-import axios from 'axios';
 import joinnow from '../components/joinNow.vue'
 import discord from '../components/discord.vue'
 
 export default {
-    data() {
-        return {
-            wpitems: {},
-            imgurl: {},
-            doneLoading : false
-        };
-    },
-async created() {
-    const response = await axios.get('https://esbjerg-esport.000webhostapp.com/wp-json/wp/v2/news');
-    this.wpitems = response.data;
-    for(const wpitem of this.wpitems) {
-    const imgData = await axios.get('https://esbjerg-esport.000webhostapp.com/wp-json/wp/v2/media/' + wpitem.featured_media)
-    wpitem.imgurl = imgData.data.media_details.sizes.full.source_url
-    }
-    this.doneLoading = true
-},
-    /*
-    created () {
-        axios.get('https://esbjerg-esport.000webhostapp.com/wp-json/wp/v2/news')
-        .then(response => {
-            this.wpitems = response.data;
-            this.wpitems.forEach(wpitem => {
-            axios.get('https://esbjerg-esport.000webhostapp.com/wp-json/wp/v2/media/'
-            + wpitem.featured_media).then(imgData => {
-                wpitem.imgurl = imgData.data.media_details.sizes.full.source_url
-            }) 
-            })
-        })
-        .catch(error => {console.log(error)
-        })
-    },
-    */
     components: {
   'webapp-joinnow': joinnow,
   'webapp-discord': discord,
   },
 }
-
 </script>
 
 <style scoped>
