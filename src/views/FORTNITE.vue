@@ -6,17 +6,21 @@
                 <v-flex xs12>
                     <h1 class="mt-5">WE OFFER FORTNITE TRAINING</h1>
                 </v-flex>
-            </v-layout>
+                  </v-layout>
         </v-container>
+          
     </div>
 <div >
    <v-container  class="Rectangle">
-       <v-layout  id="img">
-           <v-flex  md7>
+       <v-layout >
+           <v-flex lg6>
                <h1 class="mb-4">
                    WHAT IS FORTNITE?
                </h1>
                <p id="pf" class="mb-4">Wield unworldly power with Magic Leap One’s Control. Anworldly power with Magic Leap One’nworldly power with Magic Leap One’s Control. An engineering marvel, it nworldly power with Magic Leap One’s Control. An engineering marvel, it nworldly power with Magic Leap One’s Control. An engineering marvel, it s Control. An engineering marvel, it n engineering marvel, it doesn’t require any additional external sensors to deliver six degrees of freedom, also known as 6DoF. Use your Control as a paint brush, a conductor’s baton or a weaponized ice cream cone that launches Rocky Road at 14 scoops per second.</p>
+           </v-flex>
+           <v-flex lg6>
+               <v-img  class="img" :src="require('./../assets/fch.png')"></v-img>
            </v-flex>
        </v-layout>
    </v-container>
@@ -100,21 +104,19 @@ justify-items: center !important;
 }
 
 .Rectangle {
-  width: 1169px;
-  height: 384px;
   border-radius: 12px;
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.2);
   border: solid 1px var(--light-periwinkle);
   background-color: var(--dark);
 }
 
-#img{
-    background-image: url("../assets/fch.png");
-   
-    height: 80vh;
-   
-    
+.img {
+    z-index: 2;
+    align-content: flex-start;
+    justify-content: flex-start;
+
 }
+
 p {
     font-size: 13px;
 }
