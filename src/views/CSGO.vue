@@ -4,7 +4,7 @@
         <v-container id="imgcontainer">
             <v-layout align-center justify-center column fill-height>
                 <v-flex xs12>
-                    <h1 class="mt-5">WE OFFER FORTNITE TRAINING</h1>
+                    <h1 class="mt-5">WE OFFER CS:GO TRAINING</h1>
                 </v-flex>
                   </v-layout>
         </v-container>
@@ -15,12 +15,12 @@
        <v-layout >
            <v-flex lg6>
                <h1 class="mb-4">
-                   WHAT IS FORTNITE?
+                   WHAT IS CS:GO?
                </h1>
                <p id="pf" class="mb-4">Wield unworldly power with Magic Leap One’s Control. Anworldly power with Magic Leap One’nworldly power with Magic Leap One’s Control. An engineering marvel, it nworldly power with Magic Leap One’s Control. An engineering marvel, it nworldly power with Magic Leap One’s Control. An engineering marvel, it s Control. An engineering marvel, it n engineering marvel, it doesn’t require any additional external sensors to deliver six degrees of freedom, also known as 6DoF. Use your Control as a paint brush, a conductor’s baton or a weaponized ice cream cone that launches Rocky Road at 14 scoops per second.</p>
            </v-flex>
            <v-flex lg6>
-               <v-img  class="img" :src="require('./../assets/fch.png')"></v-img>
+               <v-img  class="img" :src="require('./../assets/csch.png')"></v-img>
            </v-flex>
        </v-layout>
    </v-container>
@@ -86,7 +86,7 @@ export default {};
     font-size: 16px;
 }
 #bgimg {
-    background-image: url("../assets/fbg.png");
+    background-image: url("../assets/csbg.png");
     background-repeat: no-repeat;
     background-size: cover;
     height: 80vh;

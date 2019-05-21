@@ -7,7 +7,9 @@ import News from './views/News.vue';
 import Pricing from './views/Pricing.vue';
 import Home from './views/Home.vue';
 import Fortnite from './views/FORTNITE.vue';
+import Overwatch from './views/OVERWATCH.vue';
 import Csgo from './views/CSGO.vue';
+import Fifa from './views/FIFA.vue';
 
 
 Vue.use(Router);
@@ -43,6 +45,14 @@ component: Fortnite
 { path: '/Csgo',
 name: 'Csgo',
 component: Csgo
+},
+{ path: '/Overwatch',
+name: 'Overwatch',
+component: Overwatch
+},
+{ path: '/Fifa',
+name: 'Fifa',
+component: Fifa
 },
     {
       path: '/about',
