@@ -29,35 +29,10 @@
 
     <v-container grid-list-md>
     <v-layout align-center justify-center row fill-height>
-      <v-flex d-flex xs12 md3 lg3 xl3>
-          <h4>COMMUNICATION</h4>
-          <p class="mt-2">psum dolor sit amet, mel at clita quando. Te sit oratio vituperatoribus, nam ad ipsum posidonium mediocritatem, explicari dissentiunt cu mea. Repudiare disputationi vim in, mollis iriure nec cu, alien</p>
+      <v-flex v-for="Info in Infos" v-bind:key="Info.id"  xs12 md3 lg3 xl3>
+          <h4>{{Info.Title}}</h4>
+          <p class="mt-2">{{Info.descriptionText}}</p>
       </v-flex>
-
-        <v-flex  d-flex xs12 md3 lg3 xl3>
-       <div color="transparent" dark> 
-          <h4>INGAME ECONOMY</h4>
-          <p class="mt-2">psum dolor sit amet, mel at clita quando. Te sit oratio vituperatoribus, nam ad ipsum posidonium mediocritatem, explicari dissentiunt cu mea. Repudiare disputationi vim in, mollis iriure nec cu, alien</p>
-       </div>
-      </v-flex>
-
-        <v-flex d-flex xs12 md3 lg3 xl3>
-       <div color="transparent" dark> 
-          <h4>GAME AWARENESS</h4>
-         
-          <p class="mt-2">psum dolor sit amet, mel at clita quando. Te sit oratio vituperatoribus, nam ad ipsum posidonium mediocritatem, explicari dissentiunt cu mea. Repudiare disputationi vim in, mollis iriure nec cu, alien</p>
-       </div>
-      </v-flex>
-      
-        <v-flex d-flex xs12 md3 lg3 xl3>
-       <div color="transparent" dark> 
-          <h4>TACTICS AND STRATEGY</h4>
-          <p class="mt-2">psum dolor sit amet, mel at clita quando. Te sit oratio vituperatoribus, nam ad ipsum posidonium mediocritatem, explicari dissentiunt cu mea. Repudiare disputationi vim in, mollis iriure nec cu, alien</p>
-       </div>
-      </v-flex>
-      
-      
-     
     </v-layout>
   </v-container>
   
@@ -74,7 +49,32 @@
 </template>
 
 <script>
-export default {};
+export default {
+    data() {
+            return {
+                Infos: [
+                    { 
+                    id: 1, 
+                    Title: 'Communication', 
+                    descriptionText: 'Wield unworldly power with Magic Leap One’s Control. An engineering marvel, it doesn’t require any additional external sensors to deliver six degrees of freedom, also known as 6DoF.', 
+                    },
+                    { 
+                    id: 2, 
+                    Title: 'Ingame Economy', 
+                    descriptionText: 'Wield unworldly power with Magic Leap One’s Control. An engineering marvel, it doesn’t require any additional external sensors to deliver six degrees of freedom, also known as 6DoF.', 
+                    },
+                    { 
+                    id: 3, 
+                    Title: 'Game Awareness', 
+                    descriptionText: 'Wield unworldly power with Magic Leap One’s Control. An engineering marvel, it doesn’t require any additional external sensors to deliver six degrees of freedom, also known as 6DoF.', 
+                    },
+                    { 
+                    id: 4, 
+                    Title: 'Tactics and strategy', 
+                    descriptionText: 'Wield unworldly power with Magic Leap One’s Control. An engineering marvel, it doesn’t require any additional external sensors to deliver six degrees of freedom, also known as 6DoF.', 
+                    },
+                ]}}
+};
 </script>
 
 
