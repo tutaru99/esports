@@ -87,11 +87,11 @@
     <v-layout row>
         <v-flex xs12 sm8 offset-sm2>   
                 <v-card flat color="transparent">
-                <img src="wpitem.imgurl"></img>
             <v-card-title primary-title class="white--text">
                 <div v-show="doneLoading" v-for="(wpitem, index) in wpitems" :key="index">
-                    <h2 v-html= "wpitem.title.rendered"> </h2>
-                    <p class="mt-2" v-html="wpitem.content.rendered"></p>
+                    <h1 v-html= "wpitem.title.rendered"> </h1>
+                    <span class="mt-2" v-html="wpitem.content.rendered"></span>
+                <img v-bind:src="wpitem.imgurl"></img>
                 </div>
                 <v-spacer></v-spacer>
                 <router-link id="ghostbutton" to="/">Read More</router-link>
