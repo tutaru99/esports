@@ -54,10 +54,10 @@ component: Overwatch
 name: 'Fifa',
 component: Fifa
 },
-    {
-      path: '/about',
-      name: 'about',
-      component: About
-    },
+{
+path: '/about',
+name: 'about',
+component: About
+},
   ],
 });
