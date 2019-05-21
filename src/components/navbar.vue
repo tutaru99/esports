@@ -48,6 +48,7 @@
     
 
 <nav class="hidden-lg-and-up" role="navigation">
+
   <div id="menuToggle">
     <!--
     A fake / hidden checkbox is used as click reciever,
