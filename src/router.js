@@ -10,9 +10,11 @@ import Fortnite from './views/FORTNITE.vue';
 import Overwatch from './views/OVERWATCH.vue';
 import Csgo from './views/CSGO.vue';
 import Fifa from './views/FIFA.vue';
+import VueInstagram from 'vue-instagram';
 
 
 Vue.use(Router);
+Vue.use(VueInstagram);
 
 export default new Router({
   mode: 'history',
