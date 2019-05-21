@@ -25,12 +25,12 @@
                   </router-link>
                 </v-flex>
                 <v-flex>
-                  <router-link to="/" class="ma-3">
+                  <router-link to="/Overwatch" class="ma-3">
                     <v-img height="151px" width="268px" :src="require('./../assets/ow.png')"></v-img>
                   </router-link>
                 </v-flex>
                 <v-flex>
-                  <router-link to="/" class="ma-3">
+                  <router-link to="/Fifa" class="ma-3">
                     <v-img height="151px" width="268px" :src="require('./../assets/fifa.png')"></v-img>
                   </router-link>
                 </v-flex>
@@ -48,6 +48,7 @@
     
 
 <nav class="hidden-lg-and-up" role="navigation">
+
   <div id="menuToggle">
     <!--
     A fake / hidden checkbox is used as click reciever,
