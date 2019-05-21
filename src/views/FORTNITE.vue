@@ -36,11 +36,12 @@
     </v-container>
 
     <v-container class="Rectangle2">
-      <v-layout ma-5>
-        <v-flex>
+      <v-layout ma-5 align-center justify-center>
+        <v-flex xs12>
+            <h1 class="mb-5">Our Training Schedule</h1>
           <v-sheet height="400">
             <!-- now is normally calculated by itself, but to keep the calendar in this date range to view events -->
-            <v-calendar ref="calendar" :now="today" :value="today" color="primary" type="week">
+            <v-calendar ref="calendar" :now="today" :value="today" color="#2c93c6" type="week">
               <!-- the events at the top (all-day) -->
               <template v-slot:dayHeader="{ date }">
                 <template v-for="event in eventsMap[date]">
@@ -59,6 +60,7 @@
                 <template v-for="event in eventsMap[date]">
                   <!-- timed events -->
                   <div
+                    id="timedEvents"
                     v-if="event.time"
                     :key="event.title"
                     :style="{ top: timeToY(event.time) + 'px', height: minutesToPixels(event.duration) + 'px' }"
@@ -203,14 +205,19 @@ p {
 }
 
 /* Calendar */
+
+
+h1 {
+    text-align: center;
+    
+}
 .my-event {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
   border-radius: 2px;
-  background-color: #1867c0;
+  background-color: var(--bluish);
   color: #ffffff;
-  border: 1px solid #1867c0;
   font-size: 12px;
   padding: 3px;
   cursor: pointer;
