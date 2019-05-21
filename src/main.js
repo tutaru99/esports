@@ -6,7 +6,6 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 
-Vue.use(VueInstagram)
 Vue.config.productionTip = false;
 
 new Vue({
