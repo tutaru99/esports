@@ -89,9 +89,9 @@
                 <v-card flat color="transparent">
             <v-card-title primary-title class="white--text">
                 <div v-show="doneLoading" v-for="(wpitem, index) in wpitems" :key="index">
-                    <h1 v-html= "wpitem.title.rendered"> </h1>
-                    <span class="mt-2" v-html="wpitem.content.rendered"></span>
-                <img v-bind:src="wpitem.imgurl"></img>
+                    <h1 v-html= "wpitem.title.rendered" />
+                    <span class="mt-2" v-html="wpitem.content.rendered" />
+                <v-img v-bind:src="wpitem.imgurl" />
                 </div>
                 <v-spacer></v-spacer>
                 <router-link id="ghostbutton" to="/">Read More</router-link>
@@ -155,26 +155,10 @@ async created() {
     this.wpitems = response.data;
     for(const wpitem of this.wpitems) {
     const imgData = await axios.get('https://esbjerg-esport.000webhostapp.com/wp-json/wp/v2/media/' + wpitem.featured_media)
-    wpitem.imgurl = imgData.data.media_details.sizes.full.source_url
+    wpitem.imgurl = imgData.data.media_details.sizes.medium.source_url
     }
     this.doneLoading = true
 },
-    /*
-    created () {
-        axios.get('https://esbjerg-esport.000webhostapp.com/wp-json/wp/v2/news')
-        .then(response => {
-            this.wpitems = response.data;
-            this.wpitems.forEach(wpitem => {
-            axios.get('https://esbjerg-esport.000webhostapp.com/wp-json/wp/v2/media/'
-            + wpitem.featured_media).then(imgData => {
-                wpitem.imgurl = imgData.data.media_details.sizes.full.source_url
-            }) 
-            })
-        })
-        .catch(error => {console.log(error)
-        })
-    },
-    */
     components: {
   'webapp-joinnow': joinnow,
   'webapp-discord': discord,
