@@ -2,9 +2,9 @@
 <div>
     <div fluid id="bgimg">
         <v-container id="imgcontainer">
-            <v-layout align-center justify-center column fill-height>
+            <v-layout align-center justify-center row wrap fill-height>
                 <v-flex xs12>
-                    <h1 class="mt-5">WE OFFER FORTNITE TRAINING</h1>
+                    <h1>WE OFFER FORTNITE TRAINING</h1>
                 </v-flex>
                   </v-layout>
         </v-container>
@@ -30,8 +30,10 @@
     <v-container grid-list-md>
     <v-layout align-center justify-center row fill-height>
       <v-flex d-flex xs12 md3 lg3 xl3>
+          <div color="transparent" dark>
           <h4>COMMUNICATION</h4>
           <p class="mt-2">psum dolor sit amet, mel at clita quando. Te sit oratio vituperatoribus, nam ad ipsum posidonium mediocritatem, explicari dissentiunt cu mea. Repudiare disputationi vim in, mollis iriure nec cu, alien</p>
+          </div>
       </v-flex>
 
         <v-flex  d-flex xs12 md3 lg3 xl3>
@@ -93,12 +95,6 @@ export default {};
         height: 60vh;
  }
 
-h1{
-align-content: center !important;
-align-items: center !important;
-justify-content: center !important;
-justify-items: center !important;
-}
 
 .Rectangle {
 width: 100%;
