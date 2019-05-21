@@ -12,7 +12,9 @@ import Csgo from './views/CSGO.vue';
 import Fifa from './views/FIFA.vue';
 
 
+
 Vue.use(Router);
+Vue.use(VueInstagram);
 
 export default new Router({
   mode: 'history',
