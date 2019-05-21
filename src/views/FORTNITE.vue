@@ -29,9 +29,9 @@
 
     <v-container grid-list-md>
     <v-layout align-center justify-center row fill-height>
-      <v-flex v-for="Info in Infos" v-bind:key="Info.id"  xs12 md3 lg3 xl3>
+      <v-flex class="ma-2" v-for="Info in Infos" v-bind:key="Info.id"  xs12 md3 lg3 xl3>
           <h4>{{Info.Title}}</h4>
-          <p class="mt-2">{{Info.descriptionText}}</p>
+          <p>{{Info.descriptionText}}</p>
       </v-flex>
     </v-layout>
   </v-container>
