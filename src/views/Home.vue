@@ -83,43 +83,21 @@
             </v-layout>
         </v-container>
 
-<v-container>
-    <v-layout row>
-        <v-flex xs12 sm8 offset-sm2>   
-                <v-card flat color="transparent">
-            <v-card-title primary-title class="white--text">
-                <div v-show="doneLoading" v-for="(wpitem, index) in wpitems" :key="index">
-                    <h1 v-html= "wpitem.title.rendered" />
-                    <span class="mt-2" v-html="wpitem.content.rendered" />
-                <v-img v-bind:src="wpitem.imgurl" />
+<v-container grid-list-xl> 
+    <v-layout v-show="doneLoading" v-for="(wpitem, index) in wpitems" :key="index" justify-center align-center wrap>
+        <v-flex  xs12 sm8>
+                    <v-img :src="wpitem.imgurl"  height="200px"/>
+                <div class="pa-4">
+                    <h1 class="mt-3" v-html= "wpitem.title.rendered" />
+                    <p class="mt-2" v-html="wpitem.content.rendered" />
+                    </div>
+                    <div>
+                    <v-icon medium color="#4b4e58">query_builder</v-icon>
+                    <span id="date">15.04.2010</span>
+                    <router-link id="ghostbutton" to="/">Read More</router-link>
                 </div>
-                <v-spacer></v-spacer>
-                <router-link id="ghostbutton" to="/">Read More</router-link>
-            </v-card-title>  
-                </v-card>
-                    <hr class="mb-5"> 
-        </v-flex>
-        
-    </v-layout>
-    
-
-    <v-layout row>
-        <v-flex xs12 sm8 offset-sm2>   
-                <v-card flat color="transparent">
-                <v-img src="https://scontent.faar2-1.fna.fbcdn.net/v/t1.15752-9/60509183_878543045820266_2942794317137182720_n.jpg?_nc_cat=104&_nc_ht=scontent.faar2-1.fna&oh=18ae3fd94795c6ae7df325963e436fbc&oe=5D9DCEBD"
-                height="200px">
-                </v-img>
-            <v-card-title primary-title class="white--text">
-                <div>
-                <div  class="headline">E BANKS THAT ACCEPT US CASINO PLAYERS</div>
-                <span >While most people enjoy casino gambling, sports betting, lottery and bingo playing for the fun and excitement it provides, others may experience gam…</span>
-                </div>
-            </v-card-title>
-             <router-link  to="/">Read More</router-link>
-                </v-card>
-                <hr class="mb-2"> 
-        </v-flex>
-        
+                <hr class="mb-5"> 
+        </v-flex>     
     </v-layout>
 </v-container>
 
@@ -210,6 +188,21 @@ p{font-size: 18px;
   font-style: normal;
   font-stretch: normal;
   line-height: 1.5;
+  
+  letter-spacing: normal;
+  color: var(--light-periwinkle);
+  text-decoration: none;
+ }
+
+ #date{
+     text-align: left;
+     font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  opacity: 0.5;
   letter-spacing: normal;
   color: var(--light-periwinkle);
   text-decoration: none;
