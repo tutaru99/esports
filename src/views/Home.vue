@@ -97,7 +97,7 @@
                     <router-link id="ghostbutton" to="/">Read More</router-link>
                 </div>
                 <hr class="mb-5"> 
-        </v-flex>     
+        </v-flex>
     </v-layout>
 </v-container>
 
