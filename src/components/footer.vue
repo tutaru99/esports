@@ -1,7 +1,7 @@
  <template>
  
   <v-container>
-      <v-layout column fill-height>
+      <v-layout column>
             <v-flex xs12 xl3 lg3 md4>
                 <router-link to="/" class="ma-3">
                     <img src="../assets/logo.png" alt="Logo" height="137px" class="mt-5">

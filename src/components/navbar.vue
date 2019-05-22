@@ -73,20 +73,17 @@
     <ul id="menu">
       <li>
                     <!-- First Tier Drop Down -->
-                    <label for="drop-1" class="toggle">WordPress +</label>
-                    <a href="#">WordPress</a>
-                    <input type="checkbox" id="drop-1"/>
-                    <ul>
-                        <li><a href="#">Themes and stuff</a></li>
-                        <li><a href="#">Plugins</a></li>
-                        <li><a href="#">Tutorials</a></li>
-                    </ul> 
-
+                    <label for="drop-1" class="toggle"></label>
+                     <router-link to="/">Home</router-link> <br>
+                     <router-link to="/">Games</router-link> <br>
+                     <router-link to="/News">News</router-link> <br>
+                     <router-link to="/about">About</router-link> <br>
+                     <router-link to="/events">Events</router-link> <br>
+                     <router-link to="/">Get Started</router-link> <br>
+                    
                 </li>
-      <a href="#"><li>About</li></a>
-      <a href="#"><li>Info</li></a>
-      <a href="#"><li>Contact</li></a>
-      <a href="https://erikterwan.com/" target="_blank"><li>Show me more</li></a>
+
+     
     </ul>
   </div>
 </nav>
@@ -102,7 +99,9 @@ export default {
       mini: false,
       right: null
     };
-  }
+    
+  },
+  
 };
 </script>
     
@@ -298,7 +297,7 @@ h3 {
   padding: 50px;
   padding-top: 125px;
   
-  background: #ededed;
+  background: transparent;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
   /* to stop flickering of text in safari */
@@ -311,8 +310,10 @@ h3 {
 
 #menu li
 {
+ 
   padding: 10px 0;
   font-size: 22px;
+  list-style: none;
 }
 
 /*
@@ -322,7 +323,6 @@ h3 {
 {
   transform: none;
 }
-
 
 .toggle,
 [id^=drop] {

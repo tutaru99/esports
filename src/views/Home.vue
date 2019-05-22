@@ -14,7 +14,8 @@
     <v-container grid-list-xl class="hidden-sm-and-down">
             <v-layout justify-center align-center row>
                 <v-flex xs3 >
-                    <div id="sponsor"></div>
+                    <div id="sponsor">
+                    </div>
                 </v-flex>
                 <v-flex xs3>
                     <div id="sponsor"></div>
@@ -118,6 +119,7 @@ margin: 32px 0px 32px 0px;
   height: 106px;
   opacity: 0.2;
   background-color: #ffffff;
+ 
 }
 
 #BgPreview {

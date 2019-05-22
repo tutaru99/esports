@@ -4,7 +4,7 @@
         <v-container align-content-center id="imgContainer">
             <v-layout align-center justify-center row fill-height >
                 <v-flex xs12 md7 lg7 xl4>
-                    <h1 class="mb-4" >WE OFFER FORTNITE TRAINING</h1>
+                    <h1 class="mt-5" >WE OFFER FORTNITE TRAINING</h1>
                 </v-flex>
             </v-layout>
         </v-container>
