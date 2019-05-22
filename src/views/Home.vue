@@ -84,17 +84,17 @@
         </v-container>
 
 <v-container grid-list-xl> 
-    <v-layout v-show="doneLoading" v-for="(wpitem, index) in wpitems" :key="index" justify-center align-center wrap>
+    <v-layout v-show="doneLoading" v-for="(wpitem, index) in wpitems.slice(0, 2)" :key="index" justify-center align-center wrap>
         <v-flex  xs12 sm8>
-                    <v-img :src="wpitem.imgurl"  height="200px"/>
+                    <v-img :src="wpitem.imgurl"  aspect-ratio="3" />
                 <div class="pa-4">
                     <h1 class="mt-3" v-html= "wpitem.title.rendered" />
-                    <p class="mt-2" v-html="wpitem.content.rendered" />
+                    <p id="description" class="mt-2" v-html="wpitem.content.rendered.slice(0, 30) + ' ...'" />
                     </div>
                     <div>
                     <v-icon medium color="#4b4e58">query_builder</v-icon>
-                    <span id="date">15.04.2010</span>
-                    <router-link id="ghostbutton" to="/">Read More</router-link>
+                    <span id="date" v-html="wpitem.date.slice(0,10)"></span>
+                    <router-link id="ghostbutton" to="/"> Read More</router-link>
                 </div>
                 <hr class="mb-5"> 
         </v-flex>
@@ -165,6 +165,18 @@ margin: 32px 0px 32px 0px;
     background-size: cover;
     height: 80vh;
 }
+
+
+/*
+
+#description {
+    width: 50ch;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+*/
 
 #Info_1 {
     background-image: url("../assets/picture-2.png");
