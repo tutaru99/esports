@@ -1,5 +1,6 @@
 <template>
 <div>
+    
    <div fluid id="bgimg">
         <v-container align-content-center id="imgContainer">
             <v-layout align-center justify-center row fill-height >
@@ -67,15 +68,25 @@
         <v-layout align-center justify-center column fill-height>
             <v-flex xs12>
                 <h1 class="mt-5">OUR TRAINING SCHEDULE</h1>
+                <webapp-schedule />
             </v-flex>
         </v-layout>
    </v-container>
+   
 </div>
 
 </template>
 
 <script>
-export default {};
+import schedule from  "../components/schedule.vue";
+export default {
+  components: {
+  'webapp-schedule': schedule,
+  },
+  
+
+};
+
 </script>
 
 

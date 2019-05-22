@@ -150,7 +150,9 @@ export default {
             doneLoading : false
         };
     },
+    
 async created() {
+    
     const response = await axios.get('https://esbjerg-esport.000webhostapp.com/wp-json/wp/v2/news');
     this.wpitems = response.data;
     for(const wpitem of this.wpitems) {
@@ -159,6 +161,8 @@ async created() {
     }
     this.doneLoading = true
 },
+
+
     components: {
   'webapp-joinnow': joinnow,
   'webapp-discord': discord,
