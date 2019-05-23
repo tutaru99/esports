@@ -23,7 +23,8 @@
                     <v-icon medium class="mr-3" color="#4b4e58">query_builder</v-icon>
                     <span id="date" v-html="wpitem.date.slice(0,10)"></span>
 
-                    <router-link id="ghostbutton" to="/"> Read More</router-link>
+                    <router-link id="ghostbutton" to="
+                    "> Read More</router-link>
                 </div>
               </v-flex>
             </v-layout>
