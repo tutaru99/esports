@@ -6,7 +6,6 @@
       </router-link>
 
       <v-toolbar-title>
-        
         <router-link to="/Pricing" class="ma-3">Pricing</router-link>
         <div class="dropdown">
           <router-link to="/" class="ma-3">Games</router-link>
@@ -45,48 +44,66 @@
       <v-spacer></v-spacer>
       <v-btn id="PrimaryButton" to="/pricing">Get Started</v-btn>
     </v-toolbar>
-    
 
-<nav class="hidden-lg-and-up" role="navigation">
-
-  <div id="menuToggle">
-    <!--
+    <nav class="hidden-lg-and-up" role="navigation">
+      <div id="menuToggle">
+        <!--
     A fake / hidden checkbox is used as click reciever,
     so you can use the :checked selector on it.
-    -->
-    <input type="checkbox" />
-    
-    <!--
+        -->
+        <input type="checkbox">
+
+        <!--
     Some spans to act as a hamburger.
     
     They are acting like a real hamburger,
     not that McDonalds stuff.
-    -->
-    <span></span>
-    <span></span>
-    <span></span>
-    
-    <!--
+        -->
+        <span></span>
+        <span></span>
+        <span></span>
+
+        <!--
     Too bad the menu has to be inside of the button
     but hey, it's pure CSS magic.
-    -->
-    <ul id="menu">
-      <li>
-                    <!-- First Tier Drop Down -->
-                    <label for="drop-1" class="toggle"></label>
-                     <router-link to="/">Home</router-link> <br>
-                     <router-link to="/">Games</router-link> <br>
-                     <router-link to="/News">News</router-link> <br>
-                     <router-link to="/about">About</router-link> <br>
-                     <router-link to="/events">Events</router-link> <br>
-                     <router-link to="/">Get Started</router-link> <br>
-                    
-                </li>
+        -->
+        <ul id="menu">
+          <router-link to="/pricing">Pricing</router-link>
+          <br>
+          <li>
+            <!-- First Tier Drop Down -->
 
-     
-    </ul>
-  </div>
-</nav>
+            <label for="drop-1" class="toggle">Games +</label>
+            <a href="#">Games</a>
+            <br>
+            <input type="checkbox" id="drop-1">
+            <ul>
+              <li>
+                <router-link to="/Fortnite">Fortnite</router-link>
+                <br>
+              </li>
+              <li>
+                <router-link to="/Csgo">CSGO</router-link>
+                 <br>
+              </li>
+              <li>
+                <router-link to="/overwatch">Overwatch</router-link>
+                 <br>
+              </li>
+              <li>
+                <router-link to="/Fifa">Fifa</router-link>
+                <br>
+              </li>
+            </ul>
+          </li>
+          <router-link to="/Fortnite">Fifa</router-link><br>
+          <router-link to="/Fortnite">Fifa</router-link><br>
+          <router-link to="/Fortnite">Fifa</router-link><br>
+          <v-btn to="/">Get Started</v-btn>
+          <br>
+        </ul>
+      </div>
+    </nav>
   </div>
 </template>
 
@@ -95,13 +112,11 @@ export default {
   data() {
     return {
       drawer: null,
-    
+
       mini: false,
       right: null
     };
-    
-  },
-  
+  }
 };
 </script>
     
@@ -128,8 +143,8 @@ a {
   text-decoration: none;
 }
 
-#Games_Mobile{
-   font-size: 18px;
+#Games_Mobile {
+  font-size: 18px;
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
@@ -177,12 +192,10 @@ h3 {
   overflow: hidden;
 }
 
-
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
   display: block;
 }
-
 
 #PrimaryButton {
   background-image: linear-gradient(106deg, var(--bluish), var(--light-navy));
@@ -191,69 +204,62 @@ h3 {
   font-size: 18px;
 }
 
-
 /* Mobile Menu */
 
-#menuToggle
-{
+#menuToggle {
   display: block;
   position: relative;
   top: 50px;
   left: 50px;
-  
+
   z-index: 1;
-  
+
   -webkit-user-select: none;
   user-select: none;
 }
 
-#menuToggle input
-{
+#menuToggle input {
   display: block;
   width: 40px;
   height: 32px;
   position: absolute;
   top: -7px;
   left: -5px;
-  
+
   cursor: pointer;
-  
+
   opacity: 0; /* hide this */
   z-index: 2; /* and place it over the hamburger */
-  
+
   -webkit-touch-callout: none;
 }
 
 /*
  * Just a quick hamburger
  */
-#menuToggle span
-{
+#menuToggle span {
   display: block;
   width: 33px;
   height: 4px;
   margin-bottom: 5px;
   position: relative;
-  
+
   background: #cdcdcd;
   border-radius: 3px;
-  
+
   z-index: 1;
-  
+
   transform-origin: 4px 0px;
-  
-  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-              opacity 0.55s ease;
+
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
+    background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
 }
 
-#menuToggle span:first-child
-{
+#menuToggle span:first-child {
   transform-origin: 0% 0%;
 }
 
-#menuToggle span:nth-last-child(2)
-{
+#menuToggle span:nth-last-child(2) {
   transform-origin: 0% 100%;
 }
 
@@ -261,8 +267,7 @@ h3 {
  * Transform all the slices of hamburger
  * into a crossmark.
  */
-#menuToggle input:checked ~ span
-{
+#menuToggle input:checked ~ span {
   opacity: 1;
   transform: rotate(45deg) translate(-2px, -1px);
   background: #232323;
@@ -271,8 +276,7 @@ h3 {
 /*
  * But let's hide the middle one.
  */
-#menuToggle input:checked ~ span:nth-last-child(3)
-{
+#menuToggle input:checked ~ span:nth-last-child(3) {
   opacity: 0;
   transform: rotate(0deg) scale(0.2, 0.2);
 }
@@ -280,8 +284,7 @@ h3 {
 /*
  * Ohyeah and the last one should go the other direction
  */
-#menuToggle input:checked ~ span:nth-last-child(2)
-{
+#menuToggle input:checked ~ span:nth-last-child(2) {
   transform: rotate(-45deg) translate(0, -1px);
 }
 
@@ -289,28 +292,25 @@ h3 {
  * Make this absolute positioned
  * at the top left of the screen
  */
-#menu
-{
+#menu {
   position: absolute;
   width: 300px;
   margin: -100px 0 0 -50px;
   padding: 50px;
   padding-top: 125px;
-  
-  background: transparent;
+
+  background: darkolivegreen;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
   /* to stop flickering of text in safari */
-  
+
   transform-origin: 0% 0%;
   transform: translate(-100%, 0);
-  
-  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
 }
 
-#menu li
-{
- 
+#menu li {
   padding: 10px 0;
   font-size: 22px;
   list-style: none;
@@ -319,14 +319,14 @@ h3 {
 /*
  * And let's slide it in from the left
  */
-#menuToggle input:checked ~ ul
-{
+#menuToggle input:checked ~ ul {
   transform: none;
 }
 
 .toggle,
-[id^=drop] {
-	display: none;
+[id^="drop"] {
+  display: none;
 }
+
 </style>
     
