@@ -3,10 +3,12 @@
 
     
    <webapp-navbar />
-    <v-content>
-      <router-view>
-      </router-view>
-    </v-content>
+      <v-content>
+        <transition name="fade" mode="out-in">
+      <router-view></router-view>
+        </transition>
+    </v-content>       
+
     <webapp-footer />
   </v-app>
 </template>
@@ -87,5 +89,18 @@ h3{
 
 .v-content {
   padding: 0px !important;
+}
+
+.fade-enter-active, .fade-leave-active {
+  transition-property: opacity;
+  transition-duration: .25s;
+}
+
+.fade-enter-active {
+  transition-delay: .25s;
+}
+
+.fade-enter, .fade-leave-active {
+  opacity: 0
 }
 </style>

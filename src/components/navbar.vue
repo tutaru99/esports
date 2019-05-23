@@ -1,5 +1,6 @@
  <template>
   <div>
+    
     <v-toolbar class="hidden-md-and-down" app flat height="100">
       <router-link to="/" class="ma-3">
         <img src="../assets/logo.png" alt="Logo" height="137px" class="mt-5">
@@ -32,17 +33,25 @@
                   <router-link to="/Fifa" class="ma-3">
                     <v-img height="151px" width="268px" :src="require('./../assets/fifa.png')"></v-img>
                   </router-link>
+                         
                 </v-flex>
               </v-layout>
             </v-container>
           </v-container>
         </div>
+        
         <router-link to="/News" class="ma-3">News</router-link>
         <router-link to="/about" class="ma-3">About</router-link>
         <router-link to="/Events" class="ma-3">Events</router-link>
       </v-toolbar-title>
+      
       <v-spacer></v-spacer>
+<div data-aos="fade-down"
+    data-aos-easing="ease-in-back"
+    data-aos-duration="1400"
+    data-aos-offset="750">
       <v-btn id="PrimaryButton" to="/pricing">Get Started</v-btn>
+</div>
     </v-toolbar>
 
     <nav class="hidden-lg-and-up" role="navigation">
