@@ -15,7 +15,7 @@
        <v-layout >
            <v-flex class="text" lg6>
                <h1 class="ml-5 mt-5 mb-3">
-                   WHAT IS OVERWATCH?
+                   KURWA BLYAT
                </h1>
                <p id="pf" class="mb-5 ml-5">Wield unworldly power with Magic Leap One’s Control. An engineering marvel, it doesn’t require any additional external sensors to deliver six degrees of freedom, also known as 6DoF. Use your Control as a paint brush, a conductor’s baton or a weaponized ice cream cone that launches Rocky Road at 14 scoops per second.</p>
            </v-flex>
