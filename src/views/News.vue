@@ -9,21 +9,21 @@
     </v-container>
     <v-container>
       <v-layout align-center justify-center>
-        <v-flex>
-          <v-img :src="require('../assets/news1.jpg')" aspect-ratio="1.7778" max-height="600px">
+        <v-flex v-show="doneLoading" v-for="(wpitem, index) in wpitems.slice(0,1)" :key="index">
+          <v-img :src="wpitem.imgurl" aspect-ratio="1.7778" max-height="600px">
             <v-layout align-end justify-start row fill-height>
               <v-flex lg7>
-                <div id="Rectangle2" class="ma-5">
-                  <h2 class="mt-3">ELP Esbjerg 2018</h2>
+                <div  id="Rectangle2" class="ma-5">
+                  <h2 class="mt-3" v-html="wpitem.title.rendered"/>
+                
                   <p
-                    class="mt-2"
-                  >While most people enjoy casino gambling, sports betting, lottery and bingo playing for the fun and excitement it provides, others may experience gam…</p>
+                    class="mt-2" v-html="wpitem.content.rendered.slice(0,169) + '...' "/>
+                  </div> 
                   <div>
                     <v-icon medium class="mr-3" color="#4b4e58">query_builder</v-icon>
-                    <span id="date">15.04.2010</span>
+                    <span id="date" v-html="wpitem.date.slice(0,10)"></span>
 
-                    <router-link id="ghostbutton" to="/">Read More</router-link>
-                  </div>
+                    <router-link id="ghostbutton" to="/"> Read More</router-link>
                 </div>
               </v-flex>
             </v-layout>
@@ -36,16 +36,16 @@
       <v-layout  justify-center align-start row wrap>
         <v-flex xs12 sm9>
           <h1 class="mb-5">All our news</h1>
-          <div v-show="doneLoading" v-for="(wpitem, index) in wpitems" :key="index">
+          <div v-show="doneLoading" v-for="(wpitem, index) in wpitems.slice(1)" :key="index">
             <v-img :src="wpitem.imgurl" height="200px"/>
             <div class="pa-4">
               <h1 class="mt-3" v-html="wpitem.title.rendered"/>
-              <p class="mt-2" v-html="wpitem.content.rendered"/>
+              <p class="mt-2" v-html="wpitem.content.rendered.slice(0,169) + '...' "/>
             </div>
             <div>
               <v-icon medium color="#4b4e58">query_builder</v-icon>
-              <span id="date">15.04.2010</span>
-              <router-link id="ghostbutton" to="/">Read More</router-link>
+              <span id="date" v-html="wpitem.date.slice(0,10)"></span>
+              <router-link id="ghostbutton" to="/"> Read More</router-link>
             </div>
             <hr class="mb-5">
           </div>

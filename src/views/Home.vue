@@ -15,6 +15,7 @@
             <v-layout justify-center align-center row>
                 <v-flex xs3 >
                     <div id="sponsor">
+                        
                     </div>
                 </v-flex>
                 <v-flex xs3>
