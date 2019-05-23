@@ -2,45 +2,109 @@
   <div>
     <v-container>
       <v-layout>
-        <v-flex xs12 md6 lg6 x6>
+        <v-flex xs12 md6 lg6 xl6>
           <h1>Frequently asked questions</h1>
         </v-flex>
-        <v-flex id="faq" pa-5 xs12 md6 lg6 xl6>
-          <v-expansion-panel
-      v-model="panel"
-      expand
-      
-    >
-      <v-expansion-panel-content  class="ma-3">
-        <template v-slot:header>
-          <div>Item</div>
-        </template>
 
-        <v-card flat> 
-          <v-card-text flat>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</v-card-text>
-        </v-card>
-      </v-expansion-panel-content>
-
-       <v-expansion-panel-content class="ma-3" >
-        <template v-slot:header>
-          <p>Item</p>
-        </template>
-        
-        <div>
-          <hr>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-        </div>
-      </v-expansion-panel-content>
-    </v-expansion-panel>
-        </v-flex>
+        <VueFaqAccordion :items="myItems"/>
       </v-layout>
     </v-container>
   </div>
 </template>
-
+ 
 <script>
-export default {};
+import VueFaqAccordion from "vue-faq-accordion";
+
+export default {
+  props: {
+    /**
+     * Array of items
+     * Object style {questionProperty: string, answerProperty: string, tabName: string}
+     * You can change object keys names using other props (questionProperty, answerProperty, tabName)
+     */
+    items: {
+      type: Array,
+      required: true
+    },
+
+    /**
+     * Key name of object in items array for specifying title of question
+     */
+    questionProperty: {
+      type: String,
+      default: "title"
+    },
+
+    /**
+     * Key name of object in items array for specifying content text of open question
+     */
+    answerProperty: {
+      type: String,
+      default: "value"
+    },
+
+    /**
+     * Key name of object in items array for specifying navigation tab name
+     */
+    tabName: {
+      type: String,
+      default: "category"
+    },
+
+    /**
+     * Color for hover and active tab/question
+     * possible format: 'red', '#F00', 'rgba(255, 0, 0, 1)'
+     */
+    activeColor: {
+      type: String,
+      default: "#cae1ff"
+    },
+
+    /**
+     * Color for borders
+     */
+    borderColor: {
+      type: String,
+      default: "#cae1ff"
+    },
+
+    /**
+     * Color for fonts
+     */
+    fontColor: {
+      type: String,
+      default: "#cae1ff"
+    }
+  },
+  components: {
+    VueFaqAccordion
+  },
+  data() {
+    return {
+      myItems: [
+        {
+          title: "How many time zones are there in all?",
+          value:
+            "Given a 24-hour day and 360 degrees of longitude around the Earth",
+          
+        },
+        {
+          title: "How long is a day and year on Venus?",
+          value:
+            "Venus takes 224.7 Earth days to complete one orbit around the Sun.",
+          
+        },
+        {
+          title: "What animal smells like popcorn?",
+          value: "Binturongs smell like popcorn.",
+         
+        }
+      ]
+    };
+  }
+};
 </script>
+
 
 <style scoped>
 #faq {
@@ -51,24 +115,23 @@ export default {};
   color: var(--light-periwinkle);
 }
 
-.theme--light.v-expansion-panel .v-expansion-panel__container {
-  border-radius: 8px !important;
-  border: solid 1px var(--pale-sky-blue) !important;
-  background-color: #262934 !important;
-  color: white;
-}
-.theme--light.v-expansion-panel
-  .v-expansion-panel__container
-  .v-expansion-panel__header
-  .v-expansion-panel__header__icon
-  .v-icon {
-  color: white !important;
-}
 #PrimaryButton {
   background-image: linear-gradient(106deg, var(--bluish), var(--light-navy));
   color: white;
   padding: 24px 24px 24px 24px;
   font-size: 18px;
+}
+
+.faq {
+  font-size: 18px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  
+  letter-spacing: normal;
+  color: #cae1ff !important;
+  text-decoration: none;
 }
 </style>
 
