@@ -14,10 +14,17 @@
     <v-container grid-list-xl class="hidden-sm-and-down">
             <v-layout justify-center align-center row>
                 <v-flex xs3 >
-                    <v-img id="sponsor" src="../assetes/cosmos.png">
+                    <v-img id="sponsor" :src="require('../assets/cloudfactory.png')">
                     </v-img>
                 </v-flex>
-            
+                <v-flex xs3 >
+                    <v-img id="sponsor"  :src="require('../assets/halen.png')">
+                    </v-img>
+                </v-flex>
+                <v-flex xs3 >
+                    <v-img id="sponsor"  :src="require('../assets/cosmo.png')">
+                    </v-img>
+                </v-flex>
             </v-layout>
         </v-container>
         <div fluid id="Info_1">
@@ -108,18 +115,15 @@ export default {
 
 
 #sponsor {
-margin: 32px 0px 32px 0px;
-  height: 106px;
   opacity: 0.2;
-  background-color: #ffffff;
- 
+  margin: 32px 0px 32px 0px;
 }
 
 #BgPreview {
     background-image: url("../assets/picture-1.png");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 80vh;
+    height: 60vh;
 }
 
 
@@ -177,7 +181,7 @@ p{font-size: 18px;
  }
 
  #imgContainer {
-        height: 60vh;
+        height: 80vh;
  }
 
 
