@@ -14,15 +14,10 @@
     <v-container grid-list-xl class="hidden-sm-and-down">
             <v-layout justify-center align-center row>
                 <v-flex xs3 >
-                    <div id="sponsor">
-                    </div>
+                    <v-img id="sponsor" src="../assetes/cosmos.png">
+                    </v-img>
                 </v-flex>
-                <v-flex xs3>
-                    <div id="sponsor"></div>
-                </v-flex>
-               <v-flex xs3>
-                    <div id="sponsor"></div>
-                </v-flex>
+            
             </v-layout>
         </v-container>
         <div fluid id="Info_1">
