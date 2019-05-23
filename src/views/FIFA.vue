@@ -65,10 +65,11 @@
   </v-container>
   
 
-   <v-container class="Rectangle2">
+  <v-container class="Rectangle2">
         <v-layout align-center justify-center column fill-height>
             <v-flex xs12>
-                <h1 class="mt-5">OUR TRAINING SCHEDULE</h1>
+                <h1 >OUR TRAINING SCHEDULE</h1>
+                <webapp-schedule />
             </v-flex>
         </v-layout>
    </v-container>
@@ -77,7 +78,15 @@
 </template>
 
 <script>
-export default {};
+import schedule from  "../components/schedule.vue";
+export default {
+  components: {
+  'webapp-schedule': schedule,
+  },
+  
+
+};
+
 </script>
 
 
@@ -130,8 +139,7 @@ p {
     margin: 10px;
   }
 .Rectangle2 {
-  width: 1169px;
-  height: 819px;
+  
   border-radius: 12px;
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.2);
   border: solid 1px var(--light-periwinkle);
