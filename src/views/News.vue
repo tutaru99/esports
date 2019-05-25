@@ -32,18 +32,20 @@
         </v-flex>
       </v-layout>
     </v-container>
+
+    <hr class="mt-5">
     
-    <v-container grid-list-xl>
+    <v-container class="mt-5" grid-list-xl>
       <v-layout  justify-center align-start row wrap>
         <v-flex xs12 sm9>
           <h1 class="mb-5">All our news</h1>
           <div v-show="doneLoading" v-for="(wpitem, index) in wpitems.slice(1)" :key="index">
             <v-img :src="wpitem.imgurl" height="200px"/>
-            <div class="pa-4">
-              <h1 class="mt-3" v-html="wpitem.title.rendered"/>
+            <div class="pa-3">
+              <h2 class="mt-3" v-html="wpitem.title.rendered"/>
               <p class="mt-2" v-html="wpitem.content.rendered.slice(0,169) + '...' "/>
             </div>
-            <div>
+            <div class="px-3 pb-3">
               <v-icon medium color="#4b4e58">query_builder</v-icon>
               <span id="date" v-html="wpitem.date.slice(0,10)"></span>
               <router-link id="ghostbutton" to="/"> Read More</router-link>

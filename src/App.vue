@@ -40,6 +40,9 @@ export default {
   --light-navy: #11537c;
   --bluish: #2c93c6;
   --gradient: linear-gradient(106deg, var(--bluish), var(--light-navy));
+  --active-color: #2c93c6 !important;
+    --border-color: #cae1ff  !important;
+    --font-color: #cae1ff !important;
 }
 #app {
  background-image: url("./assets/Background_Pattern.svg");
@@ -102,5 +105,28 @@ h3{
 
 .fade-enter, .fade-leave-active {
   opacity: 0
+}
+
+.accordion{
+  color: var(--light-periwinkle) !important;
+   border: solid 1px var(--light-periwinkle) !important;
+}
+.accordion__item{
+  color: var(--light-periwinkle) !important;
+   border-bottom: solid 1px var(--light-periwinkle) !important;
+}
+
+.accordion__toggle-button[data-v-36e025b4]::before{
+  background: #cae1ff !important;
+}
+.accordion__toggle-button[data-v-36e025b4]::after{
+  background: #cae1ff !important;
+}
+
+.accordion__value {
+    color: #cae1ff !important;
+    font-size: 16px;
+    opacity: 0.7;
+
 }
 </style>

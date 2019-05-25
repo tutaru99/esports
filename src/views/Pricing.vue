@@ -11,12 +11,12 @@
     </div>
 
     <v-container grid-list-xl>
-      <v-layout justify-center align-space-between  fill-height wrap>
+      <v-layout justify-center align-center  fill-height wrap>
         <v-flex xs12 md6 lg3 xl3>
           <div class="pa-4" id="rectangle">
             <h5>BASIC</h5>
             <h2>100KR / YEAR</h2>
-           <hr>
+           <hr class="mt-1">
             <ul class="mt-3">
               <li>
                 <p>Discord Access</p>
@@ -37,16 +37,16 @@
                 <p>You support the Organisation</p>
               </li>
             </ul>
-            <v-spacer></v-spacer>
+            
             <v-btn block id="getStarted" flat color="#ffffff">Get Started</v-btn>
           </div>
         </v-flex>
         <v-flex xs12 md6 lg3 xl3>
-          <div class="pa-3" id="rectangle">
+          <div class="pa-4" id="rectangle">
             <h5>MEDIUM</h5>
             <h2>300KR / 6 Mth.</h2>
-            <hr>
-            <ul>
+            <hr class="mt-1">
+            <ul class="mt-3">
               <li>
                 <p>All benefits of BASIC</p>
               </li>
@@ -65,11 +65,11 @@
           </div>
         </v-flex>
         <v-flex xs12 md6 lg3 xl3>
-          <div class="pa-3" id="premiumRectangle">
+          <div class="pa-4" id="premiumRectangle">
             <h5>PREMIUM</h5>
             <h2>500KR / 6 MTH.</h2>
-            <hr>
-            <ul>
+            <hr class="mt-1">
+            <ul class="mt-3">
               <li>
                 <p>All benefits of BASIC</p>
               </li>
@@ -151,11 +151,11 @@
           </div>
         </v-flex>
         <v-flex xs12 md6 lg3 xl3>
-          <div class="pa-3" id="rectangle">
+          <div class="pa-4" id="rectangle">
             <h5>PROFESSIONAL</h5>
             <h2>750KR / 6 MTH.</h2>
-            <hr>
-            <ul>
+            <hr class="mt-1">
+            <ul class="mt-3">
               <li>
                 <p>All benefits of BASIC</p>
               </li>
@@ -211,6 +211,7 @@ export default {
   font-size: 18px;
 }
 #rectangle {
+  height: 500px;
   border-radius: 12px;
   box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.1), 0 3px 6px 0 rgba(0, 0, 0, 0.1);
   border: solid 1px var(--light-periwinkle);
@@ -224,8 +225,8 @@ export default {
   color: var(--light-periwinkle);
 }
 #premiumRectangle {
-  width: 268px;
-  height: 535px;
+  margin: 0px -12px;
+  height: 550px;
   border-radius: 12px;
   box-shadow: 0 14px 28px 0 rgba(0, 0, 0, 0.1), 0 10px 10px 0 rgba(0, 0, 0, 0.1);
   border: solid 1px var(--light-periwinkle);
@@ -238,12 +239,14 @@ export default {
   letter-spacing: 1.2px;
   color: var(--light-periwinkle);
 }
+
 .path-4 {
   width: 204px;
   height: 1px;
   border: solid 1px var(--light-periwinkle);
 }
 #getStarted {
+  position: relative;
   font-size: 18px;
   height: 45px;
   border-radius: 4px;
@@ -256,6 +259,7 @@ export default {
   );
   border-image-slice: 1;
 }
+
 ul {
   color: var(--bluish);
 }

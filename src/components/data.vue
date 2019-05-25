@@ -12,11 +12,11 @@
     <v-layout v-show="doneLoading" v-for="(wpitem, index) in wpitems.slice(0, 2)" :key="index" justify-center align-center wrap>
         <v-flex  xs12 sm8>
                     <v-img :src="wpitem.imgurl"  aspect-ratio="3" />
-                <div class="pa-4">
-                    <h1 class="mt-3" v-html= "wpitem.title.rendered" />
+                <div class="pa-3">
+                    <h2 class="mt-3" v-html= "wpitem.title.rendered" />
                     <p id="description" class="mt-2" v-html="wpitem.content.rendered.slice(0, 169) + '...'" />
                     </div>
-                    <div>
+                    <div class="px-3 pb-3">
                     <v-icon medium color="#4b4e58">query_builder</v-icon>
                     <span id="date" v-html="wpitem.date.slice(0,10)"></span>
                     <router-link id="ghostbutton" to="/"> Read More</router-link>
