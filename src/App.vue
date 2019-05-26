@@ -8,7 +8,7 @@
       <router-view></router-view>
         </transition>
     </v-content>       
-
+    
     <webapp-footer />
   </v-app>
 </template>
@@ -18,11 +18,13 @@
 import navbar from './components/navbar.vue'
 import footer from './components/footer.vue'
 
+
 export default {
   name: 'App',
   components: {
   'webapp-navbar': navbar,
   'webapp-footer': footer,
+ 
   },
   data () {
     return {

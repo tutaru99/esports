@@ -1,39 +1,37 @@
 <template>
   <div>
-    <div fluid id="bgimg">
-      <v-container id="imgcontainer">
-        <v-layout align-center justify-center column fill-height>
-          <v-flex xs12>
-            <h1 class="mt-5">ABOUT US</h1>
-          </v-flex>
-        </v-layout>
-      </v-container>
-    </div>
+    <v-container fluid id="bgimg">
+      <v-layout justify-center align-center row fill-height>
+        <v-flex xs12>
+          <h1>Get to know us</h1>
+        </v-flex>
+      </v-layout>
+    </v-container>
     <div>
-      <v-container class="Rectangle">
-        <v-layout>
-          <v-flex class="text" lg6>
-            <h1 class="ml-5 mt-5 mb-3">WHO ARE WE?</h1>
+      <v-container class="mt-5" id="Rectangle">
+        <v-layout fill-height wrap>
+          <v-flex class="pa-5" xs12 lg6>
+            <h1 id="Headline" class="pb-3" >WHO ARE WE?</h1>
             <p
               id="pf"
-              class="mb-5 ml-5"
+              class=""
             >Wield unworldly power with Magic Leap One’s Control. An engineering marvel, it doesn’t require any additional external sensors to deliver six degrees of freedom, also known as 6DoF. Use your Control as a paint brush, a conductor’s baton or a weaponized ice cream cone that launches Rocky Road at 14 scoops per second.</p>
           </v-flex>
-          <v-flex lg6>
+          <v-flex xs12 lg6>
             <v-img class="img" :src="require('./../assets/auch.jpg')"></v-img>
           </v-flex>
         </v-layout>
       </v-container>
     </div>
 
-    <v-container>
-      <v-layout align-center justify-center fill-height>
+    <v-container class="mt-5">
+      <v-layout align-center justify-center fill-height >
         <v-flex xs12>
-          <h1 class="mt-5">JOIN OUR INSTAGRAM</h1>
+          <h1 class="my-5">JOIN OUR INSTAGRAM</h1>
           <!-- LightWidget WIDGET -->
 
           <iframe
-             src="//lightwidget.com/widgets/aebecd1f6e5c54eebd66695466e454cb.html" 
+            src="//lightwidget.com/widgets/aebecd1f6e5c54eebd66695466e454cb.html"
             scrolling="no"
             allowtransparency="true"
             class="lightwidget-widget"
@@ -61,31 +59,24 @@ export default {};
   height: 80vh;
 }
 
-#imgcontainer {
-  height: 60vh;
+
+#Headline {
+  text-align: left;
 }
 
 h1 {
-  align-content: center !important;
-  align-items: center !important;
-  justify-content: center !important;
-  justify-items: center !important;
+  text-align: center;
 }
 
-.Rectangle {
-  width: 100%;
-  height: 350px;
+#Rectangle {
+  padding: 0px !important;
   border-radius: 12px;
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.2);
   border: solid 1px var(--light-periwinkle);
   background-color: var(--dark);
-  position: relative;
 }
 
-.img {
-  bottom: 10px;
-  max-width: 566px;
-  max-height: 566px;
-  z-index: 1;
+.img{
+  border-radius: 8px;
 }
 </style>
