@@ -63,6 +63,7 @@ p{
   color: white;
   padding: 24px 24px;
   font-size: 18px;  
+  border-radius: 4px;
 }
 
 h1{
@@ -107,6 +108,9 @@ h3{
   opacity: 0
 }
 
+
+/*FAQ*/
+
 .accordion{
   color: var(--light-periwinkle) !important;
    border: solid 1px var(--light-periwinkle) !important;
@@ -128,5 +132,38 @@ h3{
     font-size: 16px;
     opacity: 0.7;
 
+}
+
+/* Calendar*/
+
+.v-calendar-daily__day-interval {
+    background: rgba(255, 255, 255, 0.04) !important;
+}
+.v-calendar-daily__intervals-head {
+   background: rgba(255, 255, 255, 0.04) !important;
+}
+.v-calendar-daily_head-day-label {
+    background: rgba(255, 255, 255, 0.16) !important;
+    color: var(--light-periwinkle) !important;
+}
+
+.v-calendar-daily_head-weekday {
+  background: rgba(255, 255, 255, 0.16) !important;
+  color: var(--light-periwinkle) !important;
+    font-family: 'Open Sans', sans-serif !important;
+}
+
+.v-calendar-daily__interval-text {
+   font-family: 'Open Sans', sans-serif !important;
+   color: var(--light-periwinkle) !important;
+
+}
+
+.my-event {
+background-c: 
+}
+.v-calendar {
+    background: var(--dark) !important;
+     border: solid 1px var(--light-periwinkle) !important;
 }
 </style>

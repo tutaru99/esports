@@ -10,7 +10,7 @@ import Fortnite from './views/FORTNITE.vue';
 import Overwatch from './views/OVERWATCH.vue';
 import Csgo from './views/CSGO.vue';
 import Fifa from './views/FIFA.vue';
-
+import Rules from './views/rules.vue';
 
 Vue.use(Router);
 
@@ -59,6 +59,11 @@ path: '/about',
 name: 'about',
 component: About
 },
+{
+  path: '/rules',
+  name: 'rules',
+  component: Rules
+  },
   ],
   scrollBehavior (to, from, savedPosition) {
     return { x: 0, y: 0 }

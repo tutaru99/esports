@@ -1,8 +1,8 @@
 <template>
-  <div>
-    <v-container>
-      <v-layout>
-        <v-flex xs12 md6 lg6 xl6>
+  <div class="mt-5">
+    <v-container grid-list-xl>
+      <v-layout wrap>
+        <v-flex xs12 md6 lg6 xl6 >
           <h1>Frequently asked questions</h1>
         </v-flex>
         <v-flex id="faq" class="pa-3" xs12 md6>

@@ -1,6 +1,9 @@
 <template>
-     <v-layout>
-    <v-flex>
+<v-container >
+        <v-layout justify-center >
+            <v-flex  id="Rectangle2" class="pa-5" xs12 lg8 >
+                <h1 class="mb-4">OUR TRAINING SCHEDULE</h1>
+        
       <v-sheet height="400">
         <!-- now is normally calculated by itself, but to keep the calendar in this date range to view events -->
         <v-calendar
@@ -39,8 +42,9 @@
           </template>
         </v-calendar>
       </v-sheet>
-    </v-flex>
-  </v-layout>
+         </v-flex>
+        </v-layout>
+   </v-container>
 </template>
 
 <script>
@@ -116,4 +120,17 @@
       margin-right: 0px;
     }
   }
+
+h1 {
+    text-align: center;
+}
+#Rectangle2 {
+ 
+  border-radius: 12px;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+  border: solid 1px var(--light-periwinkle);
+  background-color: var(--dark);
+}
+
+
 </style>
