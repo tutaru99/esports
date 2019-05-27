@@ -179,7 +179,7 @@ a {
   text-decoration: none;
 }
 .v-toolbar {
-  background-color: transparent;
+  background-color: #131723;
 }
 
 #mobileMenu {

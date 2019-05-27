@@ -11,7 +11,6 @@ import Overwatch from './views/OVERWATCH.vue';
 import Csgo from './views/CSGO.vue';
 import Fifa from './views/FIFA.vue';
 import Rules from './views/rules.vue';
-import Article from './views/article.vue';
 import SignUp from './views/signup.vue';
 
 Vue.use(Router);
@@ -65,11 +64,7 @@ path: '/about',
 name: 'about',
 component: About
 },
-{
-  path: '/article/:id',
-  name: 'article',
-  component: Article
-  },
+
 
 {
   path: '/rules',
