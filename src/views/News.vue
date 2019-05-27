@@ -18,12 +18,13 @@
                 
                   <p
                     class="mt-2" v-html="wpitem.content.rendered.slice(0,169) + '...' "/>
-                  </div> 
-                  <div>
+                  
                     <v-icon medium class="mr-3" color="#4b4e58">query_builder</v-icon>
                     <span id="date" v-html="wpitem.date.slice(0,10)"></span>
-
-                    <router-link id="ghostbutton" to="
+                    <router-link id="ghostbutton" v-bind:to="{name: 'article', params: {
+                      id: wpitem.id,
+                      image: wpitem.imgurl,
+                    }}
                     "> Read More</router-link>
                 </div>
               </v-flex>

@@ -59,6 +59,7 @@ path: '/about',
 name: 'about',
 component: About
 },
+
 {
   path: '/rules',
   name: 'rules',
