@@ -62,6 +62,7 @@ ul{
 
 #discord {
  background-image: linear-gradient(106deg, var(--bluish), var(--light-navy));
+ padding-right: 0px;
  
 }
 

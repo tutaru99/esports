@@ -3,9 +3,8 @@
     <v-container class="signup">
       <v-layout justify-center align-center wrap>
         <v-flex xs12 md6>
-          <h1 class="mb-5">Welcome to our Registration</h1>
+          <h1 class="mb-4">Welcome to our Registration</h1>
           <p
-            id="pf"
             class="mb-5"
           >Life is a song - sing it. Life is a game - play it. Life is a challenge - meet it. Life is a dream - realize it. Life is a sacrifice - offer it. Life is love - enjoy it.</p>
         </v-flex>

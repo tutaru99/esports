@@ -168,4 +168,14 @@ background-c:
     background: var(--dark) !important;
      border: solid 1px var(--light-periwinkle) !important;
 }
+
+#ghostbutton {
+  color: white;
+  position: relative;
+  right: 0;
+}
+
+.v-card__title{
+  padding: 0px;
+}
 </style>

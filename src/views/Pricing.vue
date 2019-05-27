@@ -38,7 +38,7 @@
               </li>
             </ul>
             
-            <v-btn block id="getStarted" flat color="#ffffff">Get Started</v-btn>
+            <v-btn block id="getStarted" flat color="#ffffff" to="/signup">Get Started</v-btn>
           </div>
         </v-flex>
         <v-flex xs12 md6 lg3 xl3>
@@ -61,7 +61,7 @@
               </li>
             </ul>
             
-            <v-btn block id="getStarted" flat color="#ffffff">Get Started</v-btn>
+            <v-btn block id="getStarted" flat color="#ffffff" to="/signup">Get Started</v-btn>
           </div>
         </v-flex>
         <v-flex xs12 md6 lg3 xl3>
@@ -114,7 +114,7 @@
                 <p>You support the Organisation</p>
               </li>
             </ul>
-            <v-btn block id="getStarted" flat color="#ffffff">become a pro</v-btn>
+            <v-btn block id="getStarted" flat color="#ffffff" to="/signup">become a pro</v-btn>
           </div>
         </v-flex>
       </v-layout>

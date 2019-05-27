@@ -69,12 +69,20 @@ We organize gatherings to game with friends, compete against each other, also
         </v-flex>
       </v-layout>
     </v-container>
+     <webapp-faq />
   </div>
 </template>
 
 
 <script>
-export default {};
+import faq from "../components/faq.vue";
+
+export default {
+components: {
+    'webapp-faq': faq,
+  }
+
+};
 </script>
 
 <style scoped>

@@ -13,20 +13,27 @@
           <v-img :src="wpitem.imgurl" aspect-ratio="1.7778" max-height="600px">
             <v-layout align-end justify-start row fill-height>
               <v-flex lg7>
-                <div  id="Rectangle2" class="ma-5">
+                
+                <v-card-title  class="ma-5" id="Rectangle2">
+               
                   <h2 class="mt-3" v-html="wpitem.title.rendered"/>
                 
                   <p
                     class="mt-2" v-html="wpitem.content.rendered.slice(0,169) + '...' "/>
                   
-                    <v-icon medium class="mr-3" color="#4b4e58">query_builder</v-icon>
+                    <v-icon medium class="mr-2" color="#4b4e58">query_builder</v-icon>
                     <span id="date" v-html="wpitem.date.slice(0,10)"></span>
-                    <router-link id="ghostbutton" v-bind:to="{name: 'article', params: {
+                    <v-spacer></v-spacer>
+                    <router-link id="ghostbutton" v-bind:to="{name: 'Article', params: {
                       id: wpitem.id,
                       image: wpitem.imgurl,
+                      Headline: wpitem.title.rendered,
+                      content: wpitem.content.rendered,
+                      date: wpitem.date,
                     }}
                     "> Read More</router-link>
-                </div>
+                    </v-card-title> 
+                
               </v-flex>
             </v-layout>
           </v-img>
@@ -40,19 +47,23 @@
       <v-layout  justify-center align-start row wrap>
         <v-flex xs12 sm9>
           <h1 class="mb-5">All our news</h1>
-          <div v-show="doneLoading" v-for="(wpitem, index) in wpitems.slice(1)" :key="index">
+          <v-card flat color="transparent"  v-show="doneLoading" v-for="(wpitem, index) in wpitems.slice(1)" :key="index">
+          <v-card-title class="pb-3">
             <v-img :src="wpitem.imgurl" height="200px"/>
             <div class="pa-3">
-              <h2 class="mt-3" v-html="wpitem.title.rendered"/>
+              <h2 class="mt-3" v-html="wpitem.title.rendered.slice(0,69) + '...'" />
               <p class="mt-2" v-html="wpitem.content.rendered.slice(0,169) + '...' "/>
             </div>
-            <div class="px-3 pb-3">
-              <v-icon medium color="#4b4e58">query_builder</v-icon>
-              <span id="date" v-html="wpitem.date.slice(0,10)"></span>
-              <router-link id="ghostbutton" to="/"> Read More</router-link>
-            </div>
-            <hr class="mb-5">
-          </div>
+            
+            <v-icon medium class="mr-2 ml-3" color="#4b4e58">query_builder</v-icon>
+            <span id="date" v-html="wpitem.date.slice(0,10)"></span>
+    
+              <v-spacer></v-spacer>
+              <router-link class="pr-3" id="ghostbutton" to="/"> Read More</router-link>
+          </v-card-title> 
+          <hr class="mb-5">
+           </v-card>
+           
         </v-flex>
         <v-flex xs12 sm3>
           <iframe
@@ -63,7 +74,6 @@
           ></iframe>
         </v-flex>
       </v-layout>
-      <v-layout justify-end align-start></v-layout>
     </v-container>
 
     <!--
@@ -145,7 +155,5 @@ export default {
   text-decoration: none;
 }
 
-#ghostbutton {
-  color: #1976d2;
-}
+
 </style>

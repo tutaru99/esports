@@ -77,14 +77,20 @@
     but hey, it's pure CSS magic.
         -->
         <ul id="menu">
+            <li>
+          <router-link  class="my-2" to="/">Home</router-link>
+           <br>
+              </li>
+              <li>
           <router-link to="/pricing">Pricing</router-link>
           <br>
+              </li>
           <li>
             <!-- First Tier Drop Down -->
 
             <label for="drop-1" class="toggle">Games +</label>
-            <a href="#">Games</a>
-            <br>
+            <a class="mb-3" href="#">Games</a>
+            <hr class="mt-3">
             <input type="checkbox" id="drop-1">
             <ul>
               <li>
@@ -105,10 +111,20 @@
               </li>
             </ul>
           </li>
-          <router-link to="/Fortnite">Fifa</router-link><br>
-          <router-link to="/Fortnite">Fifa</router-link><br>
-          <router-link to="/Fortnite">Fifa</router-link><br>
-          <v-btn to="/">Get Started</v-btn>
+           <hr>
+          <li>
+          <router-link class="my-2" to="/news">News</router-link>
+           <br>
+              </li>
+              <li>
+          <router-link class="my-2" to="/about">About</router-link>
+           <br>
+              </li>
+              <li>
+          <router-link  class="my-2" to="/events">Events</router-link>
+           <br>
+              </li>
+          <v-btn   class="my-2" id="PrimaryButton" to="/pricing">Get Started</v-btn>
           <br>
         </ul>
       </div>
@@ -253,7 +269,7 @@ h3 {
   margin-bottom: 5px;
   position: relative;
 
-  background: #cdcdcd;
+  background: #cae1ff;
   border-radius: 3px;
 
   z-index: 1;
@@ -279,7 +295,7 @@ h3 {
 #menuToggle input:checked ~ span {
   opacity: 1;
   transform: rotate(45deg) translate(-2px, -1px);
-  background: #232323;
+  background: #cae1ff;
 }
 
 /*
@@ -308,7 +324,7 @@ h3 {
   padding: 50px;
   padding-top: 125px;
 
-  background: darkolivegreen;
+  background: #131723;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
   /* to stop flickering of text in safari */

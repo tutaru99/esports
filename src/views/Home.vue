@@ -186,6 +186,7 @@ p{font-size: 18px;
 
 
 
+
 ul{
   color: var(--bluish);
   
