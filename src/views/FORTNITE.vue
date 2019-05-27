@@ -16,10 +16,7 @@
                <h1  id="Headline" class="ml-5 mt-5 mb-3">
                    WHAT IS FORTNITE?
                </h1>
-               <p id="pf" class="mb-5 ml-5">Fortnite is a survival game where 100 players 
-                   fight against each other in player versus player combat to be the last one standing. 
-                   It is a fast-paced, action-packed game, not unlike The Hunger Games, where strategic thinking 
-                   is a must in order to survive. There are an estimated 125 million players on Fortnite.</p>
+               <p id="pf" class="mb-5 ml-5">Wield unworldly power with Magic Leap One’s Control. An engineering marvel, it doesn’t require any additional external sensors to deliver six degrees of freedom, also known as 6DoF. Use your Control as a paint brush, a conductor’s baton or a weaponized ice cream cone that launches Rocky Road at 14 scoops per second.</p>
            </v-flex>
            <v-flex lg6>
                <v-img  class="img" :src="require('./../assets/fch.png')"></v-img>
@@ -30,24 +27,18 @@
 
 
     <v-container grid-list-md>
-    <v-layout align-start justify-center row fill-height wrap>
+    <v-layout align-center justify-center row fill-height wrap>
       <v-flex d-flex xs12 sm6 md3 lg3 xl3>
           <div class="my-5 mx-2" color="transparent" dark>
           <h4>COMMUNICATION</h4>
-          <p class="mt-2">There is a social element to the game, users can play 
-              in groups or two or more and chat to each other on headsets or text 
-              chat during the game. Fortnite has become the most viewed game in history on
-               YouTube. There are a number of popular social media influencers or YouTube
-               personalities who also play the game and provide tutorials on how to achieve a higher score.</p>
+          <p class="mt-2">psum dolor sit amet, mel at clita quando. Te sit oratio vituperatoribus, nam ad ipsum posidonium mediocritatem, explicari dissentiunt cu mea. Repudiare disputationi vim in, mollis iriure nec cu, alien</p>
           </div>
       </v-flex>
 
         <v-flex  d-flex xs12 sm6 md3 lg3 xl3>
        <div class="my-5 mx-2" color="transparent" dark> 
           <h4>INGAME ECONOMY</h4>
-          <p class="mt-2">Epic Games quite cleverly tease gamers with
-               new updates, new offers and new ways to play. Fortnite will soon be released on mobile devices.
-               Users can unlock new items for free by continuing to play the game free of charge.</p>
+          <p class="mt-2">psum dolor sit amet, mel at clita quando. Te sit oratio vituperatoribus, nam ad ipsum posidonium mediocritatem, explicari dissentiunt cu mea. Repudiare disputationi vim in, mollis iriure nec cu, alien</p>
        </div>
       </v-flex>
 
@@ -55,22 +46,14 @@
        <div class="my-5 mx-2" color="transparent" dark> 
           <h4>GAME AWARENESS</h4>
          
-          <p class="mt-2">Fortnite is a game of survival, which means in order
-               to win, you must defeat the other 99 online players in the game. This competitive 
-               element adds a touch of urgency to the game, gamers also need to avoid being caught in
-               the eye of the storm to remain in the game, there are regular countdowns to 
-               when the storm is approaching.</p>
+          <p class="mt-2">psum dolor sit amet, mel at clita quando. Te sit oratio vituperatoribus, nam ad ipsum posidonium mediocritatem, explicari dissentiunt cu mea. Repudiare disputationi vim in, mollis iriure nec cu, alien</p>
        </div>
       </v-flex>
       
         <v-flex d-flex xs12 sm6 md3 lg3 xl3>
        <div class="my-5 mx-2" color="transparent" dark> 
           <h4>TACTICS AND STRATEGY</h4>
-          <p class="mt-2">Fortnite
-Players skydive onto a small island, are equipped with an axe and must 
-scavenge for more weapons, while simultaneously avoiding a killer electrical storm. As 
-players are eliminated, the field of play also gets smaller, meaning players are put closer together. 
-Updates regularly flash on screen detailing how another player was killed.</p>
+          <p class="mt-2">psum dolor sit amet, mel at clita quando. Te sit oratio vituperatoribus, nam ad ipsum posidonium mediocritatem, explicari dissentiunt cu mea. Repudiare disputationi vim in, mollis iriure nec cu, alien</p>
        </div>
       </v-flex>
     </v-layout>

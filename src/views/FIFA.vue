@@ -15,9 +15,7 @@
                <h1   id="Headline" class="ml-5 mt-5 mb-3">
                    WHAT IS FIFA?
                </h1>
-               <p id="pf" class="mb-5 ml-5">FIFA, also known as FIFA Football or FIFA Soccer,
-                  is a series of association football video games or football 
-                  simulator, released annually by Electronic Arts under the EA Sports label.</p>
+               <p id="pf" class="mb-5 ml-5">Wield unworldly power with Magic Leap One’s Control. An engineering marvel, it doesn’t require any additional external sensors to deliver six degrees of freedom, also known as 6DoF. Use your Control as a paint brush, a conductor’s baton or a weaponized ice cream cone that launches Rocky Road at 14 scoops per second.</p>
            </v-flex>
            <v-flex lg6>
                <v-img  class="img" :src="require('./../assets/fich.png')"></v-img>
@@ -28,18 +26,18 @@
 
 
    <v-container grid-list-md>
-    <v-layout align-start justify-center row fill-height wrap>
+    <v-layout align-center justify-center row fill-height wrap>
       <v-flex d-flex xs12 sm6 md3 lg3 xl3>
           <div class="my-5 mx-2" color="transparent" dark>
           <h4>COMMUNICATION</h4>
-          <p class="mt-2">The game has built-in VOIP which can be adjust in the game launcher.</p>
+          <p class="mt-2">psum dolor sit amet, mel at clita quando. Te sit oratio vituperatoribus, nam ad ipsum posidonium mediocritatem, explicari dissentiunt cu mea. Repudiare disputationi vim in, mollis iriure nec cu, alien</p>
           </div>
       </v-flex>
 
         <v-flex  d-flex xs12 sm6 md3 lg3 xl3>
        <div class="my-5 mx-2" color="transparent" dark> 
           <h4>INGAME ECONOMY</h4>
-          <p class="mt-2">In game shop offers a wide variety of packages to buy. From ingame currency to a number of DLCs. </p>
+          <p class="mt-2">psum dolor sit amet, mel at clita quando. Te sit oratio vituperatoribus, nam ad ipsum posidonium mediocritatem, explicari dissentiunt cu mea. Repudiare disputationi vim in, mollis iriure nec cu, alien</p>
        </div>
       </v-flex>
 
@@ -47,21 +45,14 @@
        <div class="my-5 mx-2" color="transparent" dark> 
           <h4>GAME AWARENESS</h4>
          
-          <p class="mt-2"> Game introduces us to "timed finishing"— where the kick button may be pressed 
-             a second time to determine the exact moment the ball is actually kicked, "Dynamic Tactics"— which 
-              allows players 
-            to configure strategies, and switch between them in real-time during a match.</p>
+          <p class="mt-2">psum dolor sit amet, mel at clita quando. Te sit oratio vituperatoribus, nam ad ipsum posidonium mediocritatem, explicari dissentiunt cu mea. Repudiare disputationi vim in, mollis iriure nec cu, alien</p>
        </div>
       </v-flex>
       
         <v-flex d-flex xs12 sm6 md3 lg3 xl3>
        <div class="my-5 mx-2" color="transparent" dark> 
           <h4>TACTICS AND STRATEGY</h4>
-          <p class="mt-2">The game-changing animation system, which brought player
-             personality and increased fidelity in movement to EA SPORTS FIFA, returns with
-              increased coverage across the pitch. Enhanced animations for tactical shielding,
-               impact balancing, and physical
-             jostles bring realistic player movement.</p>
+          <p class="mt-2">psum dolor sit amet, mel at clita quando. Te sit oratio vituperatoribus, nam ad ipsum posidonium mediocritatem, explicari dissentiunt cu mea. Repudiare disputationi vim in, mollis iriure nec cu, alien</p>
        </div>
       </v-flex>
     </v-layout>

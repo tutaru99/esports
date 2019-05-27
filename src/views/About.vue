@@ -15,35 +15,10 @@
             <p
               id="pf"
               class=""
-            >eSport Esbjerg is a public education association that 
-            gathers gaming interested people - young and old. A great
-             opportunity to meet and game with like-minded people face to face! 
-Our goal is to make Esbjerg known within the eSport community and serve
- as a hobby that is already recognized by DGI and the Olympic Games.
-</p>
+            >Wield unworldly power with Magic Leap One’s Control. An engineering marvel, it doesn’t require any additional external sensors to deliver six degrees of freedom, also known as 6DoF. Use your Control as a paint brush, a conductor’s baton or a weaponized ice cream cone that launches Rocky Road at 14 scoops per second.</p>
           </v-flex>
           <v-flex xs12 lg6>
             <v-img class="img" :src="require('./../assets/auch.jpg')"></v-img>
-          </v-flex>
-        </v-layout>
-      </v-container>
-    </div>
-    <div>
-      <v-container class="mt-5" id="Rectangle">
-        <v-layout fill-height wrap>
-          <v-flex class="pa-5" xs12 lg12>
-            <h1 id="Headline" class="pb-3" >OUR AIM</h1>
-            <p
-              id="pf"
-              class=""
-            >We want to help with all eSport activities in
-             Southwest, whether it be small LAN parties, major tournaments, 
-             fixed training, registration, etc. We are also creating teams that
-              will compete on a professional level! Events like these raise awareness
-               and popularity not only within the city but make Denmark known for it worldwide.
-We organize gatherings to game with friends, compete against each other, also
- workshops and informative meetings with professional eSports gamers!
-</p>
           </v-flex>
         </v-layout>
       </v-container>
