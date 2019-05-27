@@ -89,7 +89,7 @@
                 <p>You support the Organisation</p>
               </li>
             </ul>
-           <v-btn block id="PrimaryButton" to="/pricing">Sign Up</v-btn>
+           <v-btn block id="PrimaryButton" to="/signup">Sign Up</v-btn>
           </div>
         </v-flex>
         <v-flex xs12 md6 lg3 xl3>
