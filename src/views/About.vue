@@ -31,8 +31,12 @@ Our goal is to make Esbjerg known within the eSport community and serve
     <div>
       <v-container class="mt-5" id="Rectangle">
         <v-layout fill-height wrap>
-          <v-flex class="pa-5" xs12 lg12>
+           <v-flex xs12 lg6>
+            <v-img class="img" :src="require('./../assets/auch.jpg')"></v-img>
+          </v-flex>
+          <v-flex class="pa-4" xs12 lg6>
             <h1 id="Headline" class="pb-3" >OUR AIM</h1>
+            
             <p
               id="pf"
               class=""

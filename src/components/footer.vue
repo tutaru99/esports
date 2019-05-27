@@ -101,8 +101,8 @@ and service(s). Company Name does not knowingly collect information from
 <style>
 
 h4 {
-font-size: 18px;
-  font-weight: 600;
+font-size: 12px;
+font-family: 'Open Sans', sans-serif;
   line-height: 1.5;
   letter-spacing: 2.6px;
   color: #cae1ff;

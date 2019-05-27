@@ -8,16 +8,16 @@
                     <h1 class="mb-4">Make your team Win</h1>
                     <ul>
                         <li>
-                            <p class="mb-4">eSport Esbjerg is a public education association that gathers gaming interested people - young and old.</p>
+                            <p class="mb-4">Talk to other members</p>
                         </li>
                          <li>
-                            <p class="mb-4">eSport Esbjerg is a public education association that gathers gaming interested people - young and old.</p>
+                            <p class="mb-4">Share files and links</p>
                         </li>
                          <li>
-                            <p class="mb-4">eSport Esbjerg is a public education association that gathers gaming interested people - young and old.</p>
+                            <p class="mb-4">Stay informed and in touch with others</p>
                         </li>
                          <li>
-                            <p class="mb-4">eSport Esbjerg is a public education association that gathers gaming interested people - young and old.</p>
+                            <p class="mb-4">Socialize outside practices</p>
                         </li>
                     </ul>
                 </v-flex>
@@ -37,6 +37,10 @@
 </script>
 
 <style lang="scss" scoped>
+ul{
+  color: var(--light-navy);
+  
+}
 
 :root {
   --dark: #131723;
