@@ -31,19 +31,19 @@
         <v-container  id="imgContainer">
             <v-layout align-center justify-start row fill-height >
                 <v-flex xs12 offset-lg6 md7 lg6 xl4 >
-                    <h1 class="mb-4">Make your team Win</h1>
+                    <h1 class="mb-4">Join Esport Esbjerg</h1>
                     <ul>
                         <li>
-                            <p class="mb-4">eSport Esbjerg is a public education association that gathers gaming interested people - young and old.</p>
+                            <p class="mb-4">Play games in a team and against each other.</p>
                         </li>
                          <li>
-                            <p class="mb-4">eSport Esbjerg is a public education association that gathers gaming interested people - young and old.</p>
+                            <p class="mb-4">Compete against other members.</p>
                         </li>
                          <li>
-                            <p class="mb-4">eSport Esbjerg is a public education association that gathers gaming interested people - young and old.</p>
+                            <p class="mb-4">Join gaming events and tournaments.</p>
                         </li>
                          <li>
-                            <p class="mb-4">eSport Esbjerg is a public education association that gathers gaming interested people - young and old.</p>
+                            <p class="mb-4">Be a part of Esport Esbjerg`s team.</p>
                         </li>
 
                     </ul>
@@ -55,19 +55,19 @@
         <v-container  id="imgContainer">
             <v-layout align-center justify-end row fill-height >
                 <v-flex xs12 md7 lg6 xl4 >
-                    <h1 class="mb-4">High end computer hardware</h1>
+                    <h1 class="mb-4">Benefits of eSports</h1>
                     <ul>
                         <li>
-                            <p class="mb-4">eSport Esbjerg is a public education association that gathers gaming interested people - young and old.</p>
+                            <p class="mb-4">Learn efficient team working skills</p>
                         </li>
                          <li>
-                            <p class="mb-4">eSport Esbjerg is a public education association that gathers gaming interested people - young and old.</p>
+                            <p class="mb-4">Exercise and stay healthy</p>
                         </li>
                          <li>
-                            <p class="mb-4">eSport Esbjerg is a public education association that gathers gaming interested people - young and old.</p>
+                            <p class="mb-4">Learn game tactics</p>
                         </li>
                          <li>
-                            <p class="mb-4">eSport Esbjerg is a public education association that gathers gaming interested people - young and old.</p>
+                            <p class="mb-4">Improve managing stress</p>
                         </li>
                     </ul>
                 </v-flex>
