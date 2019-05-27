@@ -1,10 +1,20 @@
 <template>
  <div>
   <v-container>
-    <v-layout align-center justify-center>
-      <v-flex xs12 md6 lg6>
+    <v-layout align-center justify-center wrap>
+      <v-flex xs12 md6 lg12>
         <div class="mt-5">
           <h1 class="pa-3">UPCOMMING EVENTS</h1> <br>
+          </div>
+
+          </v-flex>
+            </v-layout>
+          </v-container>
+
+                <v-container>
+                  <v-layout align-center justify-center wrap>
+                    <v-flex xs12 md6 class="ml-5 pl-3">
+                      <div >
           <iframe
             src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FeSportEsbjerg%2F&tabs=events&width=500&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
             width="500"
@@ -15,7 +25,7 @@
             allowtransparency="true"
             allow="encrypted-media"
           ></iframe>
-       </div>
+                      </div>
       
       </v-flex>
     </v-layout>
@@ -25,7 +35,7 @@
  
   <v-container class="mt-5">
       <v-layout align-center justify-center fill-height >
-        <v-flex xs12>
+        <v-flex xs12 md12>
           <h1 class="my-5">JOIN OUR INSTAGRAM</h1>
           <!-- LightWidget WIDGET -->
 
@@ -44,9 +54,17 @@
 </template>
 
 <script>
-export default {};
+export default {
+  
+}
 </script>
 
 
+
+
 <style scoped>
+h1{
+  text-align: center;
+  padding: 0;
+}
 </style>

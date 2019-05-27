@@ -7,8 +7,7 @@
         <transition name="fade" mode="out-in">
       <router-view></router-view>
         </transition>
-    </v-content>       
-    
+    </v-content>
     <webapp-footer />
   </v-app>
 </template>
@@ -134,6 +133,31 @@ h3{
     font-size: 16px;
     opacity: 0.7;
 
+}
+
+
+.cookie-consent {
+  background-color: #2c93c673 ;
+  font-family: 'Open Sans', sans-serif;
+}
+.cookie-consent-message {
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+}
+.cookie-consent-compliance {
+   background-image: linear-gradient(106deg, var(--bluish), var(--light-navy));
+  color: white;
+  font-size: 18px;  
+  border-radius: 4px;
+  border: 1px solid;
+  
+}
+
+.cookie-consent-link {
+  color: var(--dark);
+  font-size: 14px;
+  margin-left: 16px;
+  font-family: 'Open Sans', sans-serif;
 }
 
 /* Calendar*/

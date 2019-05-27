@@ -32,14 +32,14 @@ Our goal is to make Esbjerg known within the eSport community and serve
       <v-container class="mt-5" id="Rectangle">
         <v-layout fill-height wrap>
            <v-flex xs12 lg6>
-            <v-img class="img" :src="require('./../assets/auch.jpg')"></v-img>
+            <v-img class="img" :src="require('./../assets/gamingcloset.jpg')"></v-img>
           </v-flex>
           <v-flex class="pa-4" xs12 lg6>
-            <h1 id="Headline" class="pb-3" >OUR AIM</h1>
+            <h1 id="Headline" class="pb-3 px-3" >OUR AIM</h1>
             
             <p
               id="pf"
-              class=""
+              class="px-3"
             >We want to help with all eSport activities in
              Southwest, whether it be small LAN parties, major tournaments, 
              fixed training, registration, etc. We are also creating teams that

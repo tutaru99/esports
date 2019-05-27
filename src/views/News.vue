@@ -4,6 +4,7 @@
       <v-layout align-center justify-center>
         <v-flex xs12>
           <h1 class="mb-5" id="NewsHeadline">Whats going on at Esport Esbjerg</h1>
+          
         </v-flex>
       </v-layout>
     </v-container>
@@ -50,6 +51,7 @@
               <v-icon medium color="#4b4e58">query_builder</v-icon>
               <span id="date" v-html="wpitem.date.slice(0,10)"></span>
               <router-link id="ghostbutton" to="/"> Read More</router-link>
+              
             </div>
             <hr class="mb-5">
           </div>
@@ -60,7 +62,8 @@
             height="800px"
             allowtransparency="true"
             frameborder="0"
-          ></iframe>
+          ></iframe>   
+          
         </v-flex>
       </v-layout>
       <v-layout justify-end align-start></v-layout>
@@ -83,6 +86,7 @@
 </template>
 
 <script>
+
 import axios from "axios";
 import joinnow from "../components/joinNow.vue";
 import discord from "../components/discord.vue";
@@ -111,8 +115,9 @@ export default {
   },
   components: {
     "webapp-joinnow": joinnow,
-    "webapp-discord": discord
-  }
+    "webapp-discord": discord,
+  },
+  
 };
 </script>
 
