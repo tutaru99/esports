@@ -8,7 +8,9 @@
                 </router-link>
                 <h3 class="mb-3">ESPORT ESBJERG</h3>
                 <h4 class="mb-3">+45 76 16 30 50 <br> INFO@esport-esbjerg.dk <br> STREET 10 <br> 6700 ESBJERG</h4>
+                
             </v-flex>
+            
         </v-layout>
         <hr class="mb-1">
         <v-layout>
@@ -82,6 +84,7 @@ and service(s). Company Name does not knowingly collect information from
             <v-spacer></v-spacer>
             <p>2019</p>
       </v-layout>
+      <cookie-consent/>
   </v-container>
   
  </template>
@@ -98,7 +101,10 @@ and service(s). Company Name does not knowingly collect information from
 </script>
  
 
-<style>
+<style lang="scss">
+@import "./node_modules/vue-cookieconsent-component/src/scss/cookie-consent";
+@import "./node_modules/vue-cookieconsent-component/src/scss/cookie-consent-bottom";
+@import "./node_modules/vue-cookieconsent-component/src/scss/cookie-consent-transition";
 
 h4 {
 font-size: 12px;
