@@ -7,7 +7,7 @@
                     <img src="../assets/logo.png" alt="Logo" height="137px" class="mt-5">
                 </router-link>
                 <h3 class="mb-3">ESPORT ESBJERG</h3>
-                <h4 class="mb-3">+45 76 16 30 50 <br> INFO@esport-esbjerg.dk <br> STREET 10 <br> 6700 ESBJERG</h4>
+                <p class="mb-3">+45 76 16 30 50 <br> INFO@ESPORT-ESBERJG.DK <br> STREET 10 <br> 6700 ESBJERG</p>
                 
             </v-flex>
             
@@ -106,15 +106,6 @@ and service(s). Company Name does not knowingly collect information from
 @import "./node_modules/vue-cookieconsent-component/src/scss/cookie-consent-bottom";
 @import "./node_modules/vue-cookieconsent-component/src/scss/cookie-consent-transition";
 
-h4 {
-font-size: 12px;
-font-family: 'Open Sans', sans-serif;
-  line-height: 1.5;
-  letter-spacing: 2.6px;
-  color: #cae1ff;
-  text-transform: uppercase;
-}
-
 
 h3{
 font-size: 25.5px;
@@ -140,7 +131,7 @@ a {font-size: 18px;
   text-decoration: none;
  }
 
- p {font-size: 18px;
+ p {font-size: 14px;
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;

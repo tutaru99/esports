@@ -33,30 +33,19 @@
       <hr class="mt-5">
  
  
-  <v-container class="mt-5">
-      <v-layout align-center justify-center fill-height >
-        <v-flex xs12 md12>
-          <h1 class="my-5">JOIN OUR INSTAGRAM</h1>
-          <!-- LightWidget WIDGET -->
-
-          <iframe
-            src="//lightwidget.com/widgets/aebecd1f6e5c54eebd66695466e454cb.html"
-            scrolling="no"
-            allowtransparency="true"
-            class="lightwidget-widget"
-            style="width:100%;border:0;overflow:hidden;"
-          ></iframe>
-        </v-flex>
-      </v-layout>
-    </v-container>
+ <webapp-instagram/>
     </div>
   
 </template>
 
+
 <script>
+import instagram from "../components/instagram.vue";
 export default {
-  
-}
+  components: {
+    "webapp-instagram": instagram
+  }
+};
 </script>
 
 

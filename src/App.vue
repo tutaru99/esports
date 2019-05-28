@@ -92,6 +92,14 @@ h3{
   text-transform: uppercase;
 }
 
+h4{
+  font-size: 18px;
+  line-height: normal;
+  letter-spacing: 2.6px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
 .v-content {
   padding: 0px !important;
 }
@@ -188,6 +196,7 @@ h3{
 .my-event {
 background-c: 
 }
+
 .v-calendar {
     background: var(--dark) !important;
      border: solid 1px var(--light-periwinkle) !important;

@@ -11,16 +11,14 @@
       <v-container class="mt-5" id="Rectangle">
         <v-layout fill-height wrap>
           <v-flex class="pa-5" xs12 lg6>
-            <h1 id="Headline" class="pb-3" >WHO ARE WE?</h1>
-            <p
-              id="pf"
-              class=""
-            >eSport Esbjerg is a public education association that 
-            gathers gaming interested people - young and old. A great
-             opportunity to meet and game with like-minded people face to face! 
-Our goal is to make Esbjerg known within the eSport community and serve
- as a hobby that is already recognized by DGI and the Olympic Games.
-</p>
+            <h1 id="Headline" class="pb-3">WHO ARE WE?</h1>
+            <p id="pf" class>
+              eSport Esbjerg is a public education association that
+              gathers gaming interested people - young and old. A great
+              opportunity to meet and game with like-minded people face to face!
+              Our goal is to make Esbjerg known within the eSport community and serve
+              as a hobby that is already recognized by DGI and the Olympic Games.
+            </p>
           </v-flex>
           <v-flex xs12 lg6>
             <v-img class="img" :src="require('./../assets/auch.jpg')"></v-img>
@@ -31,57 +29,41 @@ Our goal is to make Esbjerg known within the eSport community and serve
     <div>
       <v-container class="mt-5" id="Rectangle">
         <v-layout fill-height wrap>
-           <v-flex xs12 lg6>
+          <v-flex xs12 lg6>
             <v-img class="img" :src="require('./../assets/gamingcloset.jpg')"></v-img>
           </v-flex>
           <v-flex class="pa-4" xs12 lg6>
-            <h1 id="Headline" class="pb-3 px-3" >OUR AIM</h1>
-            
-            <p
-              id="pf"
-              class="px-3"
-            >We want to help with all eSport activities in
-             Southwest, whether it be small LAN parties, major tournaments, 
-             fixed training, registration, etc. We are also creating teams that
+            <h1 id="Headline" class="pb-3 px-3">OUR AIM</h1>
+
+            <p id="pf" class="px-3">
+              We want to help with all eSport activities in
+              Southwest, whether it be small LAN parties, major tournaments,
+              fixed training, registration, etc. We are also creating teams that
               will compete on a professional level! Events like these raise awareness
-               and popularity not only within the city but make Denmark known for it worldwide.
-We organize gatherings to game with friends, compete against each other, also
- workshops and informative meetings with professional eSports gamers!
-</p>
+              and popularity not only within the city but make Denmark known for it worldwide.
+              We organize gatherings to game with friends, compete against each other, also
+              workshops and informative meetings with professional eSports gamers!
+            </p>
           </v-flex>
         </v-layout>
       </v-container>
     </div>
 
-    <v-container class="mt-5">
-      <v-layout align-center justify-center fill-height >
-        <v-flex xs12>
-          <h1 class="my-5">JOIN OUR INSTAGRAM</h1>
-          <!-- LightWidget WIDGET -->
-
-          <iframe
-            src="//lightwidget.com/widgets/aebecd1f6e5c54eebd66695466e454cb.html"
-            scrolling="no"
-            allowtransparency="true"
-            class="lightwidget-widget"
-            style="width:100%;border:0;overflow:hidden;"
-          ></iframe>
-        </v-flex>
-      </v-layout>
-    </v-container>
-     <webapp-faq />
+   <webapp-instagram/>
+    <webapp-faq/>
   </div>
 </template>
 
 
 <script>
 import faq from "../components/faq.vue";
+import instagram from "../components/instagram.vue";
 
 export default {
-components: {
-    'webapp-faq': faq,
+  components: {
+    "webapp-faq": faq,
+    "webapp-instagram": instagram
   }
-
 };
 </script>
 
@@ -95,7 +77,6 @@ components: {
   background-size: cover;
   height: 80vh;
 }
-
 
 #Headline {
   text-align: left;
@@ -113,7 +94,7 @@ h1 {
   background-color: var(--dark);
 }
 
-.img{
+.img {
   border-radius: 8px;
 }
 </style>
