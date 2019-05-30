@@ -43,6 +43,7 @@
         <router-link to="/News" class="ma-3">News</router-link>
         <router-link to="/about" class="ma-3">About</router-link>
         <router-link to="/Events" class="ma-3">Events</router-link>
+        <a class="ma-3" target="_blank" href="https://discord.gg/x5k7wQG">Discord</a>
       </v-toolbar-title>
       
       <v-spacer></v-spacer>
@@ -50,7 +51,7 @@
     data-aos-easing="ease-in-back"
     data-aos-duration="1400"
     data-aos-offset="750">
-      <v-btn id="PrimaryButton" to="/pricing">Get Started</v-btn>
+      <v-btn id="PrimaryButton" to="/pricing">Start Now!</v-btn>
 </div>
     </v-toolbar>
 
@@ -89,7 +90,7 @@
             <!-- First Tier Drop Down -->
 
             <label for="drop-1" class="toggle">Games +</label>
-            <a class="mb-3" href="#">Games</a>
+            <p>Games</p>
             <hr class="mt-3">
             <input type="checkbox" id="drop-1">
             <ul>
@@ -124,7 +125,7 @@
           <router-link  class="my-2" to="/events">Events</router-link>
            <br>
               </li>
-          <v-btn   class="my-2" id="PrimaryButton" to="/pricing">Get Started</v-btn>
+          <v-btn   class="my-2" id="PrimaryButton" to="/pricing">Start Now!</v-btn>
           <br>
         </ul>
       </div>
@@ -156,6 +157,9 @@ export default {
 }
 * {
   font-family: "Open Sans", sans-serif;
+}
+p{
+  font-size: 18px;
 }
 a {
   font-size: 18px;

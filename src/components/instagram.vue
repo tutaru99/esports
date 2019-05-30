@@ -4,8 +4,8 @@
       <v-layout align-center justify-center fill-height>
         <v-flex xs12>
           <h1 class="my-5">JOIN OUR INSTAGRAM</h1>
-          <!-- InstaWidget -->
-<a href="https://instawidget.net/v/user/esport_esbjerg" id="link-94e7d9fbec7c767c2179d184942084e0c805fcbfcc9ec1f69a36815887ff8926">@esport_esbjerg</a>
+<div class="elfsight-app-5524abb2-abc5-44b9-a8f1-d2c25e219cc9"></div>
+
 
         </v-flex>
       </v-layout>
@@ -21,5 +21,7 @@
 </script>
 
 <style lang="scss" scoped>
-
+.instalink-panel {
+  color:blue;
+}
 </style>

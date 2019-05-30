@@ -32,8 +32,12 @@
   </v-container>
       <hr class="mt-5">
  
- 
  <webapp-instagram/>
+ <br>
+ <hr class="mt-5">
+ <br> <br> <br> <br>
+ <webapp-schedule />
+
     </div>
   
 </template>
@@ -41,9 +45,11 @@
 
 <script>
 import instagram from "../components/instagram.vue";
+import schedule from  "../components/schedule.vue";
 export default {
   components: {
-    "webapp-instagram": instagram
+    "webapp-instagram": instagram,
+    'webapp-schedule': schedule,
   }
 };
 </script>

@@ -32,7 +32,12 @@
     <v-container grid-list-md>
     <v-layout align-start justify-center row fill-height wrap>
       <v-flex d-flex xs12 sm6 md3 lg3 xl3>
-          <div class="my-5 mx-2" color="transparent" dark>
+          <div data-aos="fade-right"
+                  data-aos-delay="400"
+                  data-aos-duration="1000"
+                  data-aos-easing="ease-in-sine"
+                  data-aos-mirror="false"
+                  class="my-5 mx-2" color="transparent" dark>
           <h4>COMMUNICATION</h4>
           <p class="mt-2">There is a social element to the game, users can play 
               in groups or two or more and chat to each other on headsets or text 
@@ -43,7 +48,13 @@
       </v-flex>
 
         <v-flex  d-flex xs12 sm6 md3 lg3 xl3>
-       <div class="my-5 mx-2" color="transparent" dark> 
+       <div 
+       data-aos="fade-right"
+                  data-aos-delay="650"
+                  data-aos-duration="1100"
+                  data-aos-easing="ease-in-sine"
+                  data-aos-mirror="false"
+       class="my-5 mx-2" color="transparent" dark> 
           <h4>INGAME ECONOMY</h4>
           <p class="mt-2">Epic Games quite cleverly tease gamers with
                new updates, new offers and new ways to play. Fortnite will soon be released on mobile devices.
@@ -52,7 +63,14 @@
       </v-flex>
 
         <v-flex d-flex xs12 sm6 md3 lg3 xl3>
-       <div class="my-5 mx-2" color="transparent" dark> 
+       <div   
+                  data-aos="fade-right"
+                  data-aos-delay="900"
+                  data-aos-duration="1500"
+                  data-aos-easing="ease-in-sine"
+                  data-aos-mirror="false"
+       
+       class="my-5 mx-2" color="transparent" dark> 
           <h4>GAME AWARENESS</h4>
          
           <p class="mt-2">Fortnite is a game of survival, which means in order
@@ -64,7 +82,13 @@
       </v-flex>
       
         <v-flex d-flex xs12 sm6 md3 lg3 xl3>
-       <div class="my-5 mx-2" color="transparent" dark> 
+       <div 
+      data-aos="fade-right"
+                  data-aos-delay="1300"
+                  data-aos-duration="1500"
+                  data-aos-easing="ease-in-sine"
+                  data-aos-mirror="false" 
+       class="my-5 mx-2" color="transparent" dark> 
           <h4>TACTICS AND STRATEGY</h4>
           <p class="mt-2">Fortnite
 Players skydive onto a small island, are equipped with an axe and must 

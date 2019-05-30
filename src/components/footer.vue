@@ -21,6 +21,7 @@
         <v-btn flat color="blue" id="privacy"
           v-on="on">Privacy Policy
         </v-btn>
+        
       </template>
 
       <v-card>
@@ -81,10 +82,17 @@ and service(s). Company Name does not knowingly collect information from
       </v-card>
     </v-dialog>
   </div>
+   <v-btn flat color="blue" id="privacy"
+         to="/rules">Rules
+        </v-btn>
+          <v-btn flat color="blue" id="privacy"
+         to="/about">FAQ
+        </v-btn>
             <v-spacer></v-spacer>
-            <p>2019</p>
+          	  <p>&copy;Designed and Coded with &#10084; and &#9749; by Ugne, Simas, Max, Lasma &nbsp; 2019</p>
       </v-layout>
       <cookie-consent/>
+      
   </v-container>
   
  </template>
