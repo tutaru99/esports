@@ -7,30 +7,30 @@
       </router-link>
 
       <v-toolbar-title>
-        <router-link to="/Pricing" class="ma-3">Pricing</router-link>
+        <router-link to="/Pricing" class="ma-3 hvr-grow">Pricing</router-link>
         <div class="dropdown">
-          <router-link to="/" class="ma-3">Games</router-link>
+          <router-link to="/" class="ma-3 hvr-grow">Games</router-link>
           <v-container fluid class="dropdown-content">
             <v-container>
               <h3>GAMES WE OFFER</h3>
               <v-layout align-center justify-center class="row">
                 <v-flex>
-                  <router-link to="/Fortnite" class="ma-3">
+                  <router-link to="/Fortnite" class="ma-3 hvr-glow">
                     <v-img height="151px" width="268px" :src="require('./../assets/fortnite.png')"></v-img>
                   </router-link>
                 </v-flex>
                 <v-flex>
-                  <router-link to="/Csgo" class="ma-3">
+                  <router-link to="/Csgo" class="ma-3 hvr-glow" >
                     <v-img height="151px" width="268px" :src="require('./../assets/cs.png')"></v-img>
                   </router-link>
                 </v-flex>
                 <v-flex>
-                  <router-link to="/Overwatch" class="ma-3">
+                  <router-link to="/Overwatch" class="ma-3 hvr-glow">
                     <v-img height="151px" width="268px" :src="require('./../assets/ow.png')"></v-img>
                   </router-link>
                 </v-flex>
                 <v-flex>
-                  <router-link to="/Fifa" class="ma-3">
+                  <router-link to="/Fifa" class="ma-3 hvr-glow" >
                     <v-img height="151px" width="268px" :src="require('./../assets/fifa.png')"></v-img>
                   </router-link>
                          
@@ -40,10 +40,10 @@
           </v-container>
         </div>
         
-        <router-link to="/News" class="ma-3">News</router-link>
-        <router-link to="/about" class="ma-3">About</router-link>
-        <router-link to="/Events" class="ma-3">Events</router-link>
-        <a class="ma-3" target="_blank" href="https://discord.gg/x5k7wQG">Discord</a>
+        <router-link to="/News" class="ma-3 hvr-grow">News</router-link>
+        <router-link to="/about" class="ma-3 hvr-grow">About</router-link>
+        <router-link to="/Events" class="ma-3 hvr-grow">Events</router-link>
+        <a class="ma-3 hvr-grow" target="_blank" href="https://discord.gg/x5k7wQG">Discord</a>
       </v-toolbar-title>
       
       <v-spacer></v-spacer>
@@ -355,6 +355,36 @@ h3 {
 .toggle,
 [id^="drop"] {
   display: none;
+}
+.hvr-grow {
+    display: inline-block;
+    vertical-align: middle;
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    transition-duration: 0.3s;
+    transition-property: transform;
+}
+
+.hvr-grow:hover,
+.hvr-grow:focus,
+.hvr-grow:active {
+    transform: scale(1.1);
+}
+.hvr-glow {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: box-shadow;
+  transition-property: box-shadow;
+}
+.hvr-glow:hover, .hvr-glow:focus, .hvr-glow:active {
+  box-shadow: 0 0 15px #11537c;
 }
 
 </style>

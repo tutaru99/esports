@@ -29,7 +29,7 @@
               <span id="date" v-html="wpitem.date.slice(0,10)"></span>
 
               <v-spacer></v-spacer>
-               <router-link class="pr-3" id="ghostbutton" to="/"> Read More</router-link>
+               <router-link class="pr-3 " id="ghostbutton" to="/">Read More</router-link>
             </v-card-title>
             <hr class="mb-5">
           </v-card>
@@ -89,4 +89,5 @@ export default {
   color: var(--light-periwinkle);
   text-decoration: none;
 }
+
 </style>

@@ -30,21 +30,36 @@
    <v-container grid-list-md>
     <v-layout align-start justify-center row fill-height wrap>
       <v-flex d-flex xs12 sm6 md3 lg3 xl3>
-          <div class="my-5 mx-2" color="transparent" dark>
+          <div
+           data-aos="fade-right"
+                   data-aos-delay="200"
+                  data-aos-duration="1000"
+                  data-aos-easing="ease-in-sine"
+                  data-aos-mirror="false" class="my-5 mx-2" color="transparent" dark>
           <h4>COMMUNICATION</h4>
           <p class="mt-2">The game has built-in VOIP which can be adjust in the game launcher.</p>
           </div>
       </v-flex>
 
         <v-flex  d-flex xs12 sm6 md3 lg3 xl3>
-       <div class="my-5 mx-2" color="transparent" dark> 
+       <div 
+        data-aos="fade-right"
+                  data-aos-delay="200"
+                  data-aos-duration="1000"
+                  data-aos-easing="ease-in-sine"
+                  data-aos-mirror="false" class="my-5 mx-2" color="transparent" dark> 
           <h4>INGAME ECONOMY</h4>
           <p class="mt-2">In game shop offers a wide variety of packages to buy. From ingame currency to a number of DLCs. </p>
        </div>
       </v-flex>
 
         <v-flex d-flex xs12 sm6 md3 lg3 xl3>
-       <div class="my-5 mx-2" color="transparent" dark> 
+       <div 
+        data-aos="fade-right"
+                   data-aos-delay="200"
+                  data-aos-duration="1000"
+                  data-aos-easing="ease-in-sine"
+                  data-aos-mirror="false" class="my-5 mx-2" color="transparent" dark> 
           <h4>GAME AWARENESS</h4>
          
           <p class="mt-2"> Game introduces us to "timed finishing"— where the kick button may be pressed 
@@ -55,7 +70,12 @@
       </v-flex>
       
         <v-flex d-flex xs12 sm6 md3 lg3 xl3>
-       <div class="my-5 mx-2" color="transparent" dark> 
+       <div 
+        data-aos="fade-right"
+                   data-aos-delay="200"
+                  data-aos-duration="1000"
+                  data-aos-easing="ease-in-sine"
+                  data-aos-mirror="false" class="my-5 mx-2" color="transparent" dark> 
           <h4>TACTICS AND STRATEGY</h4>
           <p class="mt-2">The game-changing animation system, which brought player
              personality and increased fidelity in movement to EA SPORTS FIFA, returns with

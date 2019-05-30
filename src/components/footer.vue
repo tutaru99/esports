@@ -7,7 +7,7 @@
                     <img src="../assets/logo.png" alt="Logo" height="137px" class="mt-5">
                 </router-link>
                 <h3 class="mb-3">ESPORT ESBJERG</h3>
-                <p class="mb-3">+45 76 16 30 50 <br> INFO@ESPORT-ESBERJG.DK <br> STREET 10 <br> 6700 ESBJERG</p>
+                <span class="mb-3">+45 76 16 30 50 <br> INFO@ESPORT-ESBERJG.DK <br> STREET 10 <br> 6700 ESBJERG</span>
                 
             </v-flex>
             
@@ -89,7 +89,7 @@ and service(s). Company Name does not knowingly collect information from
          to="/about">FAQ
         </v-btn>
             <v-spacer></v-spacer>
-          	  <p>&copy;Designed and Coded with &#10084; and &#9749; by Ugne, Simas, Max, Lasma &nbsp; 2019</p>
+          	  <span>&copy;Designed and Coded with &#10084; and &#9749; by Ugne, Simas, Max, Lasma &nbsp; 2019</span>
       </v-layout>
       <cookie-consent/>
       
@@ -139,7 +139,7 @@ a {font-size: 18px;
   text-decoration: none;
  }
 
- p {font-size: 14px;
+ p {font-size: 18px;
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
@@ -147,6 +147,18 @@ a {font-size: 18px;
   letter-spacing: normal;
   color: #cae1ff;
   text-decoration: none;
+ }
+ span {
+   font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 200;
+  
  }
 </style>
     

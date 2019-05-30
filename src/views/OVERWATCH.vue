@@ -29,7 +29,11 @@
 <v-container grid-list-md>
     <v-layout align-start justify-center row fill-height wrap>
       <v-flex d-flex xs12 sm6 md3 lg3 xl3>
-          <div class="my-5 mx-2" color="transparent" dark>
+          <div  data-aos="fade-right"
+                   data-aos-delay="200"
+                  data-aos-duration="1000"
+                  data-aos-easing="ease-in-sine"
+                  data-aos-mirror="false" class="my-5 mx-2" color="transparent" dark>
           <h4>COMMUNICATION</h4>
           <p class="mt-2">Overwatch has a built-in voice comms, as well as
              chat-wheel with premade voices for every situation needed 
@@ -38,7 +42,11 @@
       </v-flex>
 
         <v-flex  d-flex xs12 sm6 md3 lg3 xl3>
-       <div class="my-5 mx-2" color="transparent" dark> 
+       <div  data-aos="fade-right"
+                   data-aos-delay="200"
+                  data-aos-duration="1000"
+                  data-aos-easing="ease-in-sine"
+                  data-aos-mirror="false" class="my-5 mx-2" color="transparent" dark> 
           <h4>INGAME ECONOMY</h4>
           <p class="mt-2">As you play games of Overwatch, you’ll gain levels, 
             unlocking new customization options to make your heroes
@@ -47,7 +55,11 @@
       </v-flex>
 
         <v-flex d-flex xs12 sm6 md3 lg3 xl3>
-       <div class="my-5 mx-2" color="transparent" dark> 
+       <div  data-aos="fade-right"
+                   data-aos-delay="200"
+                  data-aos-duration="1000"
+                  data-aos-easing="ease-in-sine"
+                  data-aos-mirror="false" class="my-5 mx-2" color="transparent" dark> 
           <h4>GAME AWARENESS</h4>
          
           <p class="mt-2">There are many ways to play Overwatch. We recommend starting with the tutorial
@@ -57,7 +69,11 @@
       </v-flex>
       
         <v-flex d-flex xs12 sm6 md3 lg3 xl3>
-       <div class="my-5 mx-2" color="transparent" dark> 
+       <div  data-aos="fade-right"
+                   data-aos-delay="200"
+                  data-aos-duration="1000"
+                  data-aos-easing="ease-in-sine"
+                  data-aos-mirror="false" class="my-5 mx-2" color="transparent" dark> 
           <h4>TACTICS AND STRATEGY</h4>
           <p class="mt-2">When you enter a game of Overwatch, you'll need to choose a hero to play.
 Maybe a cannon-toting ape from the moon appeals to you. 

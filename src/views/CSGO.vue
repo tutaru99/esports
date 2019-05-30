@@ -31,7 +31,12 @@
     <v-container grid-list-md>
     <v-layout align-start justify-center row fill-height wrap>
       <v-flex d-flex xs12 sm6 md3 lg3 xl3>
-          <div class="my-5 mx-2" color="transparent" dark>
+          <div 
+           data-aos="fade-right"
+                   data-aos-delay="200"
+                  data-aos-duration="1000"
+                  data-aos-easing="ease-in-sine"
+                  data-aos-mirror="false" class="my-5 mx-2" color="transparent" dark>
           <h4>COMMUNICATION</h4>
           <p class="mt-2">Communication is an essential skill in the game of Counter-Strike. 
             It is generally used for coordinating strategies, 
@@ -40,7 +45,12 @@
       </v-flex>
 
         <v-flex  d-flex xs12 sm6 md3 lg3 xl3>
-       <div class="my-5 mx-2" color="transparent" dark> 
+       <div 
+        data-aos="fade-right"
+                  data-aos-delay="200"
+                  data-aos-duration="1000"
+                  data-aos-easing="ease-in-sine"
+                  data-aos-mirror="false" class="my-5 mx-2" color="transparent" dark> 
           <h4>INGAME ECONOMY</h4>
           <p class="mt-2">All team members have their own pot of money that 
             shifts and changes based on the events detailed above, and how you choose to manage your 
@@ -49,7 +59,12 @@
       </v-flex>
 
         <v-flex d-flex xs12 sm6 md3 lg3 xl3>
-       <div class="my-5 mx-2" color="transparent" dark> 
+       <div 
+        data-aos="fade-right"
+                   data-aos-delay="200"
+                  data-aos-duration="1000"
+                  data-aos-easing="ease-in-sine"
+                  data-aos-mirror="false" class="my-5 mx-2" color="transparent" dark> 
           <h4>GAME AWARENESS</h4>
          
           <p class="mt-2">Gamesense allows you to make a judgement about where your
@@ -60,7 +75,11 @@
       </v-flex>
       
         <v-flex d-flex xs12 sm6 md3 lg3 xl3>
-       <div class="my-5 mx-2" color="transparent" dark> 
+       <div  data-aos="fade-right"
+                   data-aos-delay="200"
+                  data-aos-duration="1000"
+                  data-aos-easing="ease-in-sine"
+                  data-aos-mirror="false" class="my-5 mx-2" color="transparent" dark> 
           <h4>TACTICS AND STRATEGY</h4>
           <p class="mt-2">Success in Counter-Strike: Global Offensive will be determined by three factors:
              skill, strategy and team play. When it comes to skill you will have to grind out your reflexes, 
