@@ -43,7 +43,7 @@
         <router-link to="/News" class="ma-3 hvr-grow">News</router-link>
         <router-link to="/about" class="ma-3 hvr-grow">About</router-link>
         <router-link to="/Events" class="ma-3 hvr-grow">Events</router-link>
-        <a class="ma-3 hvr-grow" target="_blank" href="https://discord.gg/x5k7wQG">Discord</a>
+        <a class="ma-3 hvr-grow" target="_blank" href="https://discord.gg/x5k7wQG" >Discord</a>
       </v-toolbar-title>
       
       <v-spacer></v-spacer>
