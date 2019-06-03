@@ -11,7 +11,7 @@
     </div>
 
     <v-container grid-list-xl>
-      <v-layout justify-center align-center  fill-height wrap>
+      <v-layout justify-center align-space-between  fill-height wrap>
         <v-flex xs12 md6 lg3 xl3>
           <div class="pa-4" id="rectangle">
             <h5>BASIC</h5>
@@ -60,8 +60,10 @@
                 <p>Stress exercise</p>
               </li>
             </ul>
+            <v-layout  align-space-betweenjustify-center>
+               <v-btn block id="getStarted" flat color="#ffffff" to="/signup">Get Started</v-btn>
+            </v-layout>
             
-            <v-btn block id="getStarted" flat color="#ffffff" to="/signup">Get Started</v-btn>
           </div>
         </v-flex>
         <v-flex xs12 md6 lg3 xl3>
@@ -70,23 +72,17 @@
             <h2>500KR / 6 MTH.</h2>
             <hr class="mt-1">
             <ul class="mt-3">
-              <li>
+             <li>
                 <p>All benefits of BASIC</p>
               </li>
               <li>
-                <p>Teamspeak Access</p>
+                <p>Training 2x a week</p>
               </li>
               <li>
-                <p>Member offers</p>
+                <p>Sport workout</p>
               </li>
               <li>
-                <p>Discounts of club events</p>
-              </li>
-              <li>
-                <p>Server benefits</p>
-              </li>
-              <li>
-                <p>You support the Organisation</p>
+                <p>Stress exercise</p>
               </li>
             </ul>
            <v-btn block id="PrimaryButton" to="/signup">Sign Up</v-btn>
@@ -94,6 +90,7 @@
         </v-flex>
         <v-flex xs12 md6 lg3 xl3>
           <div class="pa-4" id="rectangle">
+            
             <h5>PROFESSIONAL</h5>
             <h2>750KR / 6 MTH.</h2>
             <hr class="mt-1">
@@ -102,18 +99,16 @@
                 <p>All benefits of BASIC</p>
               </li>
               <li>
-                <p>Teamspeak Access</p>
+                <p>Training 4x a week</p>
               </li>
               <li>
-                <p>Member offers</p>
+                <p>Sport workout</p>
               </li>
               <li>
-                <p>Discounts of club events</p>
-              </li>
-              <li>
-                <p>You support the Organisation</p>
+                <p>Stress exercise</p>
               </li>
             </ul>
+           
             <v-btn block id="getStarted" flat color="#ffffff" to="/signup">become a pro</v-btn>
           </div>
         </v-flex>
@@ -198,6 +193,7 @@ export default {
     var(--light-navy)
   );
   border: 1px solid;
+
 
 }
 

@@ -20,9 +20,12 @@
                             <p class="mb-4">Socialize outside practices</p>
                         </li>
                     </ul>
+                    
+                    <a href="https://discord.gg/x5k7wQG" target="_blank">
+                      <img  src="./../assets/Discord_Join.png"    alt="Discord" height="100px" class="mt-5"></a>
                      <v-layout align-center justify-center column fill-height>
       <v-layout align-center justify-center column fill-height>
-    <br> <v-btn id="PrimaryButton" class="mb-4" href="https://discord.gg/x5k7wQG" target="_blank">Join Discord</v-btn>
+        
       </v-layout>
         
                  </v-layout>

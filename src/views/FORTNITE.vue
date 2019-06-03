@@ -34,7 +34,7 @@
       <v-flex d-flex xs12 sm6 md3 lg3 xl3>
           <div data-aos="fade-right"
                   data-aos-delay="200"
-                  data-aos-duration="1000"
+                  data-aos-duration="1700"
                   data-aos-easing="ease-in-sine"
                   data-aos-mirror="false"
                   class="my-5 mx-2" color="transparent" dark>
@@ -50,8 +50,8 @@
         <v-flex  d-flex xs12 sm6 md3 lg3 xl3>
        <div 
        data-aos="fade-right"
-                  data-aos-delay="200"
-                  data-aos-duration="1000"
+                  data-aos-delay="400"
+                  data-aos-duration="1700"
                   data-aos-easing="ease-in-sine"
                   data-aos-mirror="false"
        class="my-5 mx-2" color="transparent" dark> 
@@ -65,8 +65,8 @@
         <v-flex d-flex xs12 sm6 md3 lg3 xl3>
        <div   
                   data-aos="fade-right"
-                 data-aos-delay="200"
-                  data-aos-duration="1000"
+                 data-aos-delay="600"
+                  data-aos-duration="1700"
                   data-aos-easing="ease-in-sine"
                   data-aos-mirror="false"
        
@@ -84,8 +84,8 @@
         <v-flex d-flex xs12 sm6 md3 lg3 xl3>
        <div 
       data-aos="fade-right"
-                  data-aos-delay="200"
-                  data-aos-duration="1000"
+                  data-aos-delay="800"
+                  data-aos-duration="1600"
                   data-aos-easing="ease-in-sine"
                   data-aos-mirror="false" 
        class="my-5 mx-2" color="transparent" dark> 
