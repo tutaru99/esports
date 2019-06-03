@@ -151,7 +151,6 @@ p {
     margin: 10px;
   }
 .Rectangle2 {
-  
   border-radius: 12px;
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.2);
   border: solid 1px var(--light-periwinkle);

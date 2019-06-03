@@ -12,6 +12,8 @@ import Csgo from './views/CSGO.vue';
 import Fifa from './views/FIFA.vue';
 import Rules from './views/rules.vue';
 import SignUp from './views/signup.vue';
+import article from './views/article.vue';
+
 
 Vue.use(Router);
 
@@ -65,7 +67,7 @@ name: 'about',
 component: About
 },
 {
-  path: '/Article/:id',
+  path: '/article',
   name: 'article',
   component: article
 },

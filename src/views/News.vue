@@ -18,21 +18,14 @@
                 <v-card-title  class="ma-5" id="Rectangle2">
                
                   <h2 class="mt-3" v-html="wpitem.title.rendered"/>
-                  
+                
                   <p
                     class="mt-2" v-html="wpitem.content.rendered.slice(0,169) + '...' "/>
                   
                     <v-icon medium class="mr-2" color="#4b4e58">query_builder</v-icon>
                     <span id="date" v-html="wpitem.date.slice(0,10)"></span>
                     <v-spacer></v-spacer>
-                    <router-link id="ghostbutton" v-bind:to="{name: 'Article', params: {
-                      id: wpitem.id,
-                      image: wpitem.imgurl,
-                      Headline: wpitem.title.rendered,
-                      content: wpitem.content.rendered,
-                      date: wpitem.date,
-                    }}
-                    "> Read More</router-link>
+                    <router-link id="ghostbutton" to="/article"> Read More</router-link>
                     </v-card-title> 
                 
               </v-flex>
@@ -60,7 +53,7 @@
             <span id="date" v-html="wpitem.date.slice(0,10)"></span>
     
               <v-spacer></v-spacer>
-              <router-link class="pr-3" id="ghostbutton" to="/"> Read More</router-link>
+              <router-link class="pr-3" id="ghostbutton" to="/article"> Read More</router-link>
           </v-card-title> 
           <hr class="mb-5">
            </v-card>
@@ -73,7 +66,8 @@
             allowtransparency="true"
             frameborder="0"
           ></iframe>   
-         
+          <br>
+          <br>
           <iframe src='https://www.juicer.io/api/feeds/esport_esbjerg/iframe'
            frameborder='0' width='300' height='500' style='display:block;margin:0 auto;'></iframe>
         </v-flex>
