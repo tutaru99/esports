@@ -22,9 +22,22 @@
 </template>
 
 <script>
-    export default {
-        props: ['id','Headline', 'content', 'date', 'image'],
-    }
+  export default {
+    data() {
+        var project = this.$route.params
+        return {
+      show: true,
+      article: {
+          
+    id: project.id, headline: project.headline, 
+    placement: project.placement,
+    description: project.description,
+    deepDescription: project.deepDescription,
+    imgLink: project.imgLink, linkAdress: project.linkAdress,
+      }
+        }
+    },
+  }
 </script>
 
 <style lang="scss" scoped>

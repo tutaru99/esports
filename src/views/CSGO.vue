@@ -34,7 +34,7 @@
           <div 
            data-aos="fade-right"
                    data-aos-delay="200"
-                  data-aos-duration="1000"
+                  data-aos-duration="1700"
                   data-aos-easing="ease-in-sine"
                   data-aos-mirror="false" class="my-5 mx-2" color="transparent" dark>
           <h4>COMMUNICATION</h4>
@@ -47,8 +47,8 @@
         <v-flex  d-flex xs12 sm6 md3 lg3 xl3>
        <div 
         data-aos="fade-right"
-                  data-aos-delay="200"
-                  data-aos-duration="1000"
+                  data-aos-delay="400"
+                  data-aos-duration="1700"
                   data-aos-easing="ease-in-sine"
                   data-aos-mirror="false" class="my-5 mx-2" color="transparent" dark> 
           <h4>INGAME ECONOMY</h4>
@@ -61,8 +61,8 @@
         <v-flex d-flex xs12 sm6 md3 lg3 xl3>
        <div 
         data-aos="fade-right"
-                   data-aos-delay="200"
-                  data-aos-duration="1000"
+                   data-aos-delay="600"
+                  data-aos-duration="1700"
                   data-aos-easing="ease-in-sine"
                   data-aos-mirror="false" class="my-5 mx-2" color="transparent" dark> 
           <h4>GAME AWARENESS</h4>
@@ -76,8 +76,8 @@
       
         <v-flex d-flex xs12 sm6 md3 lg3 xl3>
        <div  data-aos="fade-right"
-                   data-aos-delay="200"
-                  data-aos-duration="1000"
+                   data-aos-delay="800"
+                  data-aos-duration="1700"
                   data-aos-easing="ease-in-sine"
                   data-aos-mirror="false" class="my-5 mx-2" color="transparent" dark> 
           <h4>TACTICS AND STRATEGY</h4>

@@ -64,7 +64,11 @@ path: '/about',
 name: 'about',
 component: About
 },
-
+{
+  path: '/Article/:id',
+  name: 'article',
+  component: article
+},
 
 {
   path: '/rules',

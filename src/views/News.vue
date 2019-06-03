@@ -18,7 +18,7 @@
                 <v-card-title  class="ma-5" id="Rectangle2">
                
                   <h2 class="mt-3" v-html="wpitem.title.rendered"/>
-                
+                  
                   <p
                     class="mt-2" v-html="wpitem.content.rendered.slice(0,169) + '...' "/>
                   
@@ -69,11 +69,13 @@
         <v-flex xs12 sm3>
           <iframe
             src="https://discordapp.com/widget?id=577441083848654849&theme=dark"
-            height="800px"
+            height="500px"
             allowtransparency="true"
             frameborder="0"
           ></iframe>   
-          
+         
+          <iframe src='https://www.juicer.io/api/feeds/esport_esbjerg/iframe'
+           frameborder='0' width='300' height='500' style='display:block;margin:0 auto;'></iframe>
         </v-flex>
       </v-layout>
     </v-container>
@@ -158,6 +160,5 @@ export default {
   color: var(--light-periwinkle);
   text-decoration: none;
 }
-
 
 </style>
