@@ -5,7 +5,7 @@
         <v-container fluid  id="discord">
             <v-layout align-center justify-start row fill-height >
                 <v-flex xs12 md7 offset-lg1 lg5 xl4 >
-                    <h1 class="mb-4">Make your team Win</h1>
+                    <h1 class="mb-4">Join our servers</h1>
                     <ul>
                         <li>
                             <p class="mb-4">Talk to other members</p>
