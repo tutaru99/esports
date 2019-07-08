@@ -28,4 +28,5 @@ npm run lint
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
 
+MainPage
 ![Screenshot](src/assets/frontpage.PNG?raw=true "Title")
